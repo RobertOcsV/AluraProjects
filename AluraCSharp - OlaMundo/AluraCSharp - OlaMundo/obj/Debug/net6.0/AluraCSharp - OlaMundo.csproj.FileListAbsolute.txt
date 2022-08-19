@@ -1,0 +1,15 @@
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\AluraCSharp - OlaMundo\bin\Debug\net6.0\AluraCSharp - OlaMundo.exe
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\AluraCSharp - OlaMundo\bin\Debug\net6.0\AluraCSharp - OlaMundo.deps.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\AluraCSharp - OlaMundo\bin\Debug\net6.0\AluraCSharp - OlaMundo.runtimeconfig.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\AluraCSharp - OlaMundo\bin\Debug\net6.0\AluraCSharp - OlaMundo.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\AluraCSharp - OlaMundo\bin\Debug\net6.0\AluraCSharp - OlaMundo.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\AluraCSharp - OlaMundo\obj\Debug\net6.0\AluraCSharp - OlaMundo.csproj.AssemblyReference.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\AluraCSharp - OlaMundo\obj\Debug\net6.0\AluraCSharp - OlaMundo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\AluraCSharp - OlaMundo\obj\Debug\net6.0\AluraCSharp - OlaMundo.AssemblyInfoInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\AluraCSharp - OlaMundo\obj\Debug\net6.0\AluraCSharp - OlaMundo.AssemblyInfo.cs
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\AluraCSharp - OlaMundo\obj\Debug\net6.0\AluraCSharp - OlaMundo.csproj.CoreCompileInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\AluraCSharp - OlaMundo\obj\Debug\net6.0\AluraCSharp - OlaMundo.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\AluraCSharp - OlaMundo\obj\Debug\net6.0\refint\AluraCSharp - OlaMundo.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\AluraCSharp - OlaMundo\obj\Debug\net6.0\AluraCSharp - OlaMundo.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\AluraCSharp - OlaMundo\obj\Debug\net6.0\AluraCSharp - OlaMundo.genruntimeconfig.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\AluraCSharp - OlaMundo\obj\Debug\net6.0\ref\AluraCSharp - OlaMundo.dll
