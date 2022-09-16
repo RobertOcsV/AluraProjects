@@ -1,0 +1,15 @@
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\3-CriandoVariaveisPontoFlutuante\bin\Debug\net6.0\3-CriandoVariaveisPontoFlutuante.exe
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\3-CriandoVariaveisPontoFlutuante\bin\Debug\net6.0\3-CriandoVariaveisPontoFlutuante.deps.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\3-CriandoVariaveisPontoFlutuante\bin\Debug\net6.0\3-CriandoVariaveisPontoFlutuante.runtimeconfig.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\3-CriandoVariaveisPontoFlutuante\bin\Debug\net6.0\3-CriandoVariaveisPontoFlutuante.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\3-CriandoVariaveisPontoFlutuante\bin\Debug\net6.0\3-CriandoVariaveisPontoFlutuante.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\3-CriandoVariaveisPontoFlutuante\obj\Debug\net6.0\3-CriandoVariaveisPontoFlutuante.csproj.AssemblyReference.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\3-CriandoVariaveisPontoFlutuante\obj\Debug\net6.0\3-CriandoVariaveisPontoFlutuante.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\3-CriandoVariaveisPontoFlutuante\obj\Debug\net6.0\3-CriandoVariaveisPontoFlutuante.AssemblyInfoInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\3-CriandoVariaveisPontoFlutuante\obj\Debug\net6.0\3-CriandoVariaveisPontoFlutuante.AssemblyInfo.cs
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\3-CriandoVariaveisPontoFlutuante\obj\Debug\net6.0\3-CriandoVariaveisPontoFlutuante.csproj.CoreCompileInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\3-CriandoVariaveisPontoFlutuante\obj\Debug\net6.0\3-CriandoVariaveisPontoFlutuante.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\3-CriandoVariaveisPontoFlutuante\obj\Debug\net6.0\refint\3-CriandoVariaveisPontoFlutuante.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\3-CriandoVariaveisPontoFlutuante\obj\Debug\net6.0\3-CriandoVariaveisPontoFlutuante.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\3-CriandoVariaveisPontoFlutuante\obj\Debug\net6.0\3-CriandoVariaveisPontoFlutuante.genruntimeconfig.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\3-CriandoVariaveisPontoFlutuante\obj\Debug\net6.0\ref\3-CriandoVariaveisPontoFlutuante.dll

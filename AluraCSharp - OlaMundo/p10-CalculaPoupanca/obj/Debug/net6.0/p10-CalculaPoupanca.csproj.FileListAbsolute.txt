@@ -1,0 +1,15 @@
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p10-CalculaPoupanca\bin\Debug\net6.0\p10-CalculaPoupanca.exe
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p10-CalculaPoupanca\bin\Debug\net6.0\p10-CalculaPoupanca.deps.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p10-CalculaPoupanca\bin\Debug\net6.0\p10-CalculaPoupanca.runtimeconfig.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p10-CalculaPoupanca\bin\Debug\net6.0\p10-CalculaPoupanca.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p10-CalculaPoupanca\bin\Debug\net6.0\p10-CalculaPoupanca.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p10-CalculaPoupanca\obj\Debug\net6.0\p10-CalculaPoupanca.csproj.AssemblyReference.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p10-CalculaPoupanca\obj\Debug\net6.0\p10-CalculaPoupanca.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p10-CalculaPoupanca\obj\Debug\net6.0\p10-CalculaPoupanca.AssemblyInfoInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p10-CalculaPoupanca\obj\Debug\net6.0\p10-CalculaPoupanca.AssemblyInfo.cs
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p10-CalculaPoupanca\obj\Debug\net6.0\p10-CalculaPoupanca.csproj.CoreCompileInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p10-CalculaPoupanca\obj\Debug\net6.0\p10-CalculaPoupanca.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p10-CalculaPoupanca\obj\Debug\net6.0\refint\p10-CalculaPoupanca.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p10-CalculaPoupanca\obj\Debug\net6.0\p10-CalculaPoupanca.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p10-CalculaPoupanca\obj\Debug\net6.0\p10-CalculaPoupanca.genruntimeconfig.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p10-CalculaPoupanca\obj\Debug\net6.0\ref\p10-CalculaPoupanca.dll

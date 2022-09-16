@@ -1,0 +1,15 @@
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\byteBank\obj\Debug\net6.0\byteBank.csproj.AssemblyReference.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\byteBank\obj\Debug\net6.0\byteBank.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\byteBank\obj\Debug\net6.0\byteBank.AssemblyInfoInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\byteBank\obj\Debug\net6.0\byteBank.AssemblyInfo.cs
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\byteBank\obj\Debug\net6.0\byteBank.csproj.CoreCompileInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\byteBank\bin\Debug\net6.0\byteBank.exe
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\byteBank\bin\Debug\net6.0\byteBank.deps.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\byteBank\bin\Debug\net6.0\byteBank.runtimeconfig.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\byteBank\bin\Debug\net6.0\byteBank.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\byteBank\bin\Debug\net6.0\byteBank.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\byteBank\obj\Debug\net6.0\byteBank.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\byteBank\obj\Debug\net6.0\refint\byteBank.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\byteBank\obj\Debug\net6.0\byteBank.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\byteBank\obj\Debug\net6.0\byteBank.genruntimeconfig.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\byteBank\obj\Debug\net6.0\ref\byteBank.dll

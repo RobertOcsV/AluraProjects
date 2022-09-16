@@ -1,0 +1,15 @@
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\9-Escopo\bin\Debug\net6.0\9-Escopo.exe
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\9-Escopo\bin\Debug\net6.0\9-Escopo.deps.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\9-Escopo\bin\Debug\net6.0\9-Escopo.runtimeconfig.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\9-Escopo\bin\Debug\net6.0\9-Escopo.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\9-Escopo\bin\Debug\net6.0\9-Escopo.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\9-Escopo\obj\Debug\net6.0\9-Escopo.csproj.AssemblyReference.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\9-Escopo\obj\Debug\net6.0\9-Escopo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\9-Escopo\obj\Debug\net6.0\9-Escopo.AssemblyInfoInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\9-Escopo\obj\Debug\net6.0\9-Escopo.AssemblyInfo.cs
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\9-Escopo\obj\Debug\net6.0\9-Escopo.csproj.CoreCompileInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\9-Escopo\obj\Debug\net6.0\9-Escopo.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\9-Escopo\obj\Debug\net6.0\refint\9-Escopo.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\9-Escopo\obj\Debug\net6.0\9-Escopo.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\9-Escopo\obj\Debug\net6.0\9-Escopo.genruntimeconfig.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\9-Escopo\obj\Debug\net6.0\ref\9-Escopo.dll

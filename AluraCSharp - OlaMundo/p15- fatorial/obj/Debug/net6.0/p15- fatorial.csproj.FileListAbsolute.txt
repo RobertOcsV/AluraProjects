@@ -1,0 +1,15 @@
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p15- fatorial\bin\Debug\net6.0\p15- fatorial.exe
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p15- fatorial\bin\Debug\net6.0\p15- fatorial.deps.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p15- fatorial\bin\Debug\net6.0\p15- fatorial.runtimeconfig.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p15- fatorial\bin\Debug\net6.0\p15- fatorial.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p15- fatorial\bin\Debug\net6.0\p15- fatorial.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p15- fatorial\obj\Debug\net6.0\p15- fatorial.csproj.AssemblyReference.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p15- fatorial\obj\Debug\net6.0\p15- fatorial.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p15- fatorial\obj\Debug\net6.0\p15- fatorial.AssemblyInfoInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p15- fatorial\obj\Debug\net6.0\p15- fatorial.AssemblyInfo.cs
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p15- fatorial\obj\Debug\net6.0\p15- fatorial.csproj.CoreCompileInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p15- fatorial\obj\Debug\net6.0\p15- fatorial.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p15- fatorial\obj\Debug\net6.0\refint\p15- fatorial.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p15- fatorial\obj\Debug\net6.0\p15- fatorial.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p15- fatorial\obj\Debug\net6.0\p15- fatorial.genruntimeconfig.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p15- fatorial\obj\Debug\net6.0\ref\p15- fatorial.dll

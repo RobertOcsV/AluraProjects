@@ -1,0 +1,15 @@
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p13 - EncadeamentoFor\bin\Debug\net6.0\p13 - EncadeamentoFor.exe
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p13 - EncadeamentoFor\bin\Debug\net6.0\p13 - EncadeamentoFor.deps.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p13 - EncadeamentoFor\bin\Debug\net6.0\p13 - EncadeamentoFor.runtimeconfig.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p13 - EncadeamentoFor\bin\Debug\net6.0\p13 - EncadeamentoFor.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p13 - EncadeamentoFor\bin\Debug\net6.0\p13 - EncadeamentoFor.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p13 - EncadeamentoFor\obj\Debug\net6.0\p13 - EncadeamentoFor.csproj.AssemblyReference.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p13 - EncadeamentoFor\obj\Debug\net6.0\p13 - EncadeamentoFor.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p13 - EncadeamentoFor\obj\Debug\net6.0\p13 - EncadeamentoFor.AssemblyInfoInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p13 - EncadeamentoFor\obj\Debug\net6.0\p13 - EncadeamentoFor.AssemblyInfo.cs
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p13 - EncadeamentoFor\obj\Debug\net6.0\p13 - EncadeamentoFor.csproj.CoreCompileInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p13 - EncadeamentoFor\obj\Debug\net6.0\p13 - EncadeamentoFor.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p13 - EncadeamentoFor\obj\Debug\net6.0\refint\p13 - EncadeamentoFor.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p13 - EncadeamentoFor\obj\Debug\net6.0\p13 - EncadeamentoFor.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p13 - EncadeamentoFor\obj\Debug\net6.0\p13 - EncadeamentoFor.genruntimeconfig.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p13 - EncadeamentoFor\obj\Debug\net6.0\ref\p13 - EncadeamentoFor.dll

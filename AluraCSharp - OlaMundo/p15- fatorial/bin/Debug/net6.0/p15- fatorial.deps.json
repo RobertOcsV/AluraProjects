@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "p15- fatorial/1.0.0": {
+        "runtime": {
+          "p15- fatorial.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "p15- fatorial/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

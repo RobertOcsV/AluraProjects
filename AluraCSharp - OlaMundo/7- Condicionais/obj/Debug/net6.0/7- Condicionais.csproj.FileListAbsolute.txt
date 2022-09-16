@@ -1,0 +1,15 @@
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\7- Condicionais\bin\Debug\net6.0\7- Condicionais.exe
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\7- Condicionais\bin\Debug\net6.0\7- Condicionais.deps.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\7- Condicionais\bin\Debug\net6.0\7- Condicionais.runtimeconfig.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\7- Condicionais\bin\Debug\net6.0\7- Condicionais.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\7- Condicionais\bin\Debug\net6.0\7- Condicionais.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\7- Condicionais\obj\Debug\net6.0\7- Condicionais.csproj.AssemblyReference.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\7- Condicionais\obj\Debug\net6.0\7- Condicionais.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\7- Condicionais\obj\Debug\net6.0\7- Condicionais.AssemblyInfoInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\7- Condicionais\obj\Debug\net6.0\7- Condicionais.AssemblyInfo.cs
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\7- Condicionais\obj\Debug\net6.0\7- Condicionais.csproj.CoreCompileInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\7- Condicionais\obj\Debug\net6.0\7- Condicionais.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\7- Condicionais\obj\Debug\net6.0\refint\7- Condicionais.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\7- Condicionais\obj\Debug\net6.0\7- Condicionais.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\7- Condicionais\obj\Debug\net6.0\7- Condicionais.genruntimeconfig.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\7- Condicionais\obj\Debug\net6.0\ref\7- Condicionais.dll

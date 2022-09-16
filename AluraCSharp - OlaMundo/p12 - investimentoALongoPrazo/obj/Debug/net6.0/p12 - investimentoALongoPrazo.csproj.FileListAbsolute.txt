@@ -1,0 +1,15 @@
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p12 - investimentoALongoPrazo\obj\Debug\net6.0\p12 - investimentoALongoPrazo.csproj.AssemblyReference.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p12 - investimentoALongoPrazo\obj\Debug\net6.0\p12 - investimentoALongoPrazo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p12 - investimentoALongoPrazo\obj\Debug\net6.0\p12 - investimentoALongoPrazo.AssemblyInfoInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p12 - investimentoALongoPrazo\obj\Debug\net6.0\p12 - investimentoALongoPrazo.AssemblyInfo.cs
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p12 - investimentoALongoPrazo\obj\Debug\net6.0\p12 - investimentoALongoPrazo.csproj.CoreCompileInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p12 - investimentoALongoPrazo\bin\Debug\net6.0\p12 - investimentoALongoPrazo.exe
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p12 - investimentoALongoPrazo\bin\Debug\net6.0\p12 - investimentoALongoPrazo.deps.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p12 - investimentoALongoPrazo\bin\Debug\net6.0\p12 - investimentoALongoPrazo.runtimeconfig.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p12 - investimentoALongoPrazo\bin\Debug\net6.0\p12 - investimentoALongoPrazo.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p12 - investimentoALongoPrazo\bin\Debug\net6.0\p12 - investimentoALongoPrazo.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p12 - investimentoALongoPrazo\obj\Debug\net6.0\p12 - investimentoALongoPrazo.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p12 - investimentoALongoPrazo\obj\Debug\net6.0\refint\p12 - investimentoALongoPrazo.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p12 - investimentoALongoPrazo\obj\Debug\net6.0\p12 - investimentoALongoPrazo.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p12 - investimentoALongoPrazo\obj\Debug\net6.0\p12 - investimentoALongoPrazo.genruntimeconfig.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\p12 - investimentoALongoPrazo\obj\Debug\net6.0\ref\p12 - investimentoALongoPrazo.dll

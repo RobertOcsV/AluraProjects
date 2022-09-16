@@ -1,0 +1,15 @@
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\6-AtribuicoesDeVariaveis\bin\Debug\net6.0\6-AtribuicoesDeVariaveis.exe
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\6-AtribuicoesDeVariaveis\bin\Debug\net6.0\6-AtribuicoesDeVariaveis.deps.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\6-AtribuicoesDeVariaveis\bin\Debug\net6.0\6-AtribuicoesDeVariaveis.runtimeconfig.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\6-AtribuicoesDeVariaveis\bin\Debug\net6.0\6-AtribuicoesDeVariaveis.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\6-AtribuicoesDeVariaveis\bin\Debug\net6.0\6-AtribuicoesDeVariaveis.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\6-AtribuicoesDeVariaveis\obj\Debug\net6.0\6-AtribuicoesDeVariaveis.csproj.AssemblyReference.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\6-AtribuicoesDeVariaveis\obj\Debug\net6.0\6-AtribuicoesDeVariaveis.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\6-AtribuicoesDeVariaveis\obj\Debug\net6.0\6-AtribuicoesDeVariaveis.AssemblyInfoInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\6-AtribuicoesDeVariaveis\obj\Debug\net6.0\6-AtribuicoesDeVariaveis.AssemblyInfo.cs
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\6-AtribuicoesDeVariaveis\obj\Debug\net6.0\6-AtribuicoesDeVariaveis.csproj.CoreCompileInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\6-AtribuicoesDeVariaveis\obj\Debug\net6.0\6-AtribuicoesDeVariaveis.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\6-AtribuicoesDeVariaveis\obj\Debug\net6.0\refint\6-AtribuicoesDeVariaveis.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\6-AtribuicoesDeVariaveis\obj\Debug\net6.0\6-AtribuicoesDeVariaveis.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\6-AtribuicoesDeVariaveis\obj\Debug\net6.0\6-AtribuicoesDeVariaveis.genruntimeconfig.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\6-AtribuicoesDeVariaveis\obj\Debug\net6.0\ref\6-AtribuicoesDeVariaveis.dll

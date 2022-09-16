@@ -1,0 +1,15 @@
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\2 -CriandoVariáveis\bin\Debug\net6.0\2 -CriandoVariáveis.exe
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\2 -CriandoVariáveis\bin\Debug\net6.0\2 -CriandoVariáveis.deps.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\2 -CriandoVariáveis\bin\Debug\net6.0\2 -CriandoVariáveis.runtimeconfig.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\2 -CriandoVariáveis\bin\Debug\net6.0\2 -CriandoVariáveis.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\2 -CriandoVariáveis\bin\Debug\net6.0\2 -CriandoVariáveis.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\2 -CriandoVariáveis\obj\Debug\net6.0\2 -CriandoVariáveis.csproj.AssemblyReference.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\2 -CriandoVariáveis\obj\Debug\net6.0\2 -CriandoVariáveis.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\2 -CriandoVariáveis\obj\Debug\net6.0\2 -CriandoVariáveis.AssemblyInfoInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\2 -CriandoVariáveis\obj\Debug\net6.0\2 -CriandoVariáveis.AssemblyInfo.cs
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\2 -CriandoVariáveis\obj\Debug\net6.0\2 -CriandoVariáveis.csproj.CoreCompileInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\2 -CriandoVariáveis\obj\Debug\net6.0\2 -CriandoVariáveis.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\2 -CriandoVariáveis\obj\Debug\net6.0\refint\2 -CriandoVariáveis.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\2 -CriandoVariáveis\obj\Debug\net6.0\2 -CriandoVariáveis.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\2 -CriandoVariáveis\obj\Debug\net6.0\2 -CriandoVariáveis.genruntimeconfig.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\2 -CriandoVariáveis\obj\Debug\net6.0\ref\2 -CriandoVariáveis.dll

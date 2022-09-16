@@ -1,0 +1,15 @@
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\5-CaracteresETextos\bin\Debug\net6.0\5-CaracteresETextos.exe
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\5-CaracteresETextos\bin\Debug\net6.0\5-CaracteresETextos.deps.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\5-CaracteresETextos\bin\Debug\net6.0\5-CaracteresETextos.runtimeconfig.json
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\5-CaracteresETextos\bin\Debug\net6.0\5-CaracteresETextos.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\5-CaracteresETextos\bin\Debug\net6.0\5-CaracteresETextos.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\5-CaracteresETextos\obj\Debug\net6.0\5-CaracteresETextos.csproj.AssemblyReference.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\5-CaracteresETextos\obj\Debug\net6.0\5-CaracteresETextos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\5-CaracteresETextos\obj\Debug\net6.0\5-CaracteresETextos.AssemblyInfoInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\5-CaracteresETextos\obj\Debug\net6.0\5-CaracteresETextos.AssemblyInfo.cs
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\5-CaracteresETextos\obj\Debug\net6.0\5-CaracteresETextos.csproj.CoreCompileInputs.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\5-CaracteresETextos\obj\Debug\net6.0\5-CaracteresETextos.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\5-CaracteresETextos\obj\Debug\net6.0\refint\5-CaracteresETextos.dll
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\5-CaracteresETextos\obj\Debug\net6.0\5-CaracteresETextos.pdb
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\5-CaracteresETextos\obj\Debug\net6.0\5-CaracteresETextos.genruntimeconfig.cache
+D:\Github\AluraProjects\AluraCSharp - OlaMundo\5-CaracteresETextos\obj\Debug\net6.0\ref\5-CaracteresETextos.dll
