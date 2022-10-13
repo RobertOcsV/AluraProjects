@@ -1,28 +1,24 @@
-﻿us
-//Console.WriteLine("Boas Vindas ao ByteBank, Atendimento.");
+﻿
 
-//int[] idades = new int[5];
+using bytebank.Modelos.Conta;
 
-//idades[0] = 33;
-//idades[1] = 35;
-//idades[2] = 20;
-//idades[3] = 37;
-//idades[4] = 24;
-
-//Console.WriteLine($"Tamanho do Array {idades.Length}");
-
-
-//int acumulador = 0;
-//for (int i = 0; i < idades.Length; i++) {
-
-//    int idade = idades[i];
-//    Console.WriteLine($"indice [{i}] = {idade}");
-//    acumulador += idade;
-
-//}
-//int media = acumulador / idades.Length;
-
-//Console.WriteLine($"Media de idades = {media}");
+void TestaArrayDeContasCorrentes()
+{
+    ContaCorrente[] listaDeContas = new ContaCorrente[]
+        {
+            new ContaCorrente(874, "4232-A"),
+            new ContaCorrente(874, "4232-A"),
+            new ContaCorrente(874, "4232-A"),
 
 
+        };
 
+         for (int i = 0; i < listaDeContas.Length; i++)
+        {
+        ContaCorrente contaAtual = listaDeContas[i];
+        Console.WriteLine($" Indice:{i} Conta:{contaAtual.Conta}");
+        }
+
+}
+
+TestaArrayDeContasCorrentes();

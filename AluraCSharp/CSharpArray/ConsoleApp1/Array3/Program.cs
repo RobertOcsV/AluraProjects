@@ -28,4 +28,3 @@ void TestaMediana(Array array)
     Console.WriteLine($"Com base na amostra a mediana = {mediana}");
 }
 
-TestaMediana(amostra);

@@ -96,10 +96,11 @@
 			return true;
 		}
 
-		public ContaCorrente(int numero_agencia)
-		{
+		public ContaCorrente(int numero_agencia, string conta)
+		{	
+			Conta = conta; //código inserido 
 			Numero_agencia = numero_agencia;
-			Conta = Guid.NewGuid().ToString().Substring(0, 8);
+			Conta = Guid.NewGuid().ToString().Substring(0, 8); // código que veio com o projeto.
 			Titular = new Cliente();
 			TotalDeContasCriadas++;
 		}

@@ -1,4 +1,4 @@
-﻿void TestaBuscarPalavras()
+﻿ void TestaBuscarPalavras()
 {
     string[] arrayDePalavras = new string[5];
 

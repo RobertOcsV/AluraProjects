@@ -1,0 +1,5 @@
+D:\Github\AluraProjects\AluraCSharp\CSharpArray\ConsoleApp1\array5\obj\Debug\net6.0\array5.csproj.AssemblyReference.cache
+D:\Github\AluraProjects\AluraCSharp\CSharpArray\ConsoleApp1\array5\obj\Debug\net6.0\array5.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\AluraProjects\AluraCSharp\CSharpArray\ConsoleApp1\array5\obj\Debug\net6.0\array5.AssemblyInfoInputs.cache
+D:\Github\AluraProjects\AluraCSharp\CSharpArray\ConsoleApp1\array5\obj\Debug\net6.0\array5.AssemblyInfo.cs
+D:\Github\AluraProjects\AluraCSharp\CSharpArray\ConsoleApp1\array5\obj\Debug\net6.0\array5.csproj.CoreCompileInputs.cache
