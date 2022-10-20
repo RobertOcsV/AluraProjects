@@ -7,6 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarPensamentoComponent implements OnInit {
 
+  listaPensamentos = [
+    // {
+    //   conteudo: 'teste de batata',
+    //   autoria: 'Angular',
+    //   modelo: 'modelo1'
+
+    // },
+    // {
+    //   conteudo: 'aassb',
+    //   autoria: 'Angular',
+    //   modelo: 'modelo2'
+
+    // }
+
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
