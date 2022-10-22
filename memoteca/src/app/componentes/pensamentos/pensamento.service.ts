@@ -17,11 +17,7 @@ export class PensamentoService {
   }
 
   criar(pensamento: Pensamento): Observable<Pensamento> {
-
-        const httpOptions = {   headers: new HttpHeaders({ 'Content-Type':  'application/json' }) };
-        var retorno = this.http.post<Pensamento>(this.API, pensamento, httpOptions);
-        return retorno;
-
+     return this.http.post<Pensamento>(this.API, pensamento)
 
     }
 
