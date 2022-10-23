@@ -1,18 +1,6 @@
 {
   "pensamentos": [
     {
-      "id": 1,
-      "conteudo": "Que bom que você veio",
-      "autoria": "Nay",
-      "modelo": "modelo1"
-    },
-    {
-      "id": 2,
-      "conteudo": "Que bom que você veio",
-      "autoria": "Nay",
-      "modelo": "modelo3"
-    },
-    {
       "id": 3,
       "conteudo": "softball",
       "autoria": "Jorge",
@@ -29,6 +17,12 @@
       "autoria": "teste",
       "modelo": "modelo2",
       "id": 5
+    },
+    {
+      "conteudo": "",
+      "autoria": "",
+      "modelo": "modelo1",
+      "id": 6
     }
   ]
 }
