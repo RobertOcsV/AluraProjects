@@ -9,6 +9,16 @@ contaDoAndre.saldo = 100;
 
 Console.WriteLine("Saldo da conta do andré= " + contaDoAndre.saldo);
 
-contaDoAndre.Sacar(100);
+ContaCorrente contaDoJorge = new ContaCorrente();
 
+contaDoJorge.titular = "Jorge";
+contaDoJorge.numero_agencia = 55;
+contaDoJorge.conta = "9826-X";
+contaDoJorge.saldo = 230;
+
+Console.WriteLine("Saldo da conta do Jorge= " + contaDoJorge.saldo);
+
+contaDoAndre.transferir(50, contaDoJorge);
+
+Console.WriteLine("Saldo da conta do Jorge= " + contaDoJorge.saldo);
 Console.WriteLine("Saldo da conta do andré= " + contaDoAndre.saldo);
