@@ -1,0 +1,15 @@
+D:\Github\AluraProjects\AluraCSharp\bytebankOrientacaoObje\bytebank\bytebank\bin\Debug\net6.0\bytebank.exe
+D:\Github\AluraProjects\AluraCSharp\bytebankOrientacaoObje\bytebank\bytebank\bin\Debug\net6.0\bytebank.deps.json
+D:\Github\AluraProjects\AluraCSharp\bytebankOrientacaoObje\bytebank\bytebank\bin\Debug\net6.0\bytebank.runtimeconfig.json
+D:\Github\AluraProjects\AluraCSharp\bytebankOrientacaoObje\bytebank\bytebank\bin\Debug\net6.0\bytebank.dll
+D:\Github\AluraProjects\AluraCSharp\bytebankOrientacaoObje\bytebank\bytebank\bin\Debug\net6.0\bytebank.pdb
+D:\Github\AluraProjects\AluraCSharp\bytebankOrientacaoObje\bytebank\bytebank\obj\Debug\net6.0\bytebank.csproj.AssemblyReference.cache
+D:\Github\AluraProjects\AluraCSharp\bytebankOrientacaoObje\bytebank\bytebank\obj\Debug\net6.0\bytebank.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\AluraProjects\AluraCSharp\bytebankOrientacaoObje\bytebank\bytebank\obj\Debug\net6.0\bytebank.AssemblyInfoInputs.cache
+D:\Github\AluraProjects\AluraCSharp\bytebankOrientacaoObje\bytebank\bytebank\obj\Debug\net6.0\bytebank.AssemblyInfo.cs
+D:\Github\AluraProjects\AluraCSharp\bytebankOrientacaoObje\bytebank\bytebank\obj\Debug\net6.0\bytebank.csproj.CoreCompileInputs.cache
+D:\Github\AluraProjects\AluraCSharp\bytebankOrientacaoObje\bytebank\bytebank\obj\Debug\net6.0\bytebank.dll
+D:\Github\AluraProjects\AluraCSharp\bytebankOrientacaoObje\bytebank\bytebank\obj\Debug\net6.0\refint\bytebank.dll
+D:\Github\AluraProjects\AluraCSharp\bytebankOrientacaoObje\bytebank\bytebank\obj\Debug\net6.0\bytebank.pdb
+D:\Github\AluraProjects\AluraCSharp\bytebankOrientacaoObje\bytebank\bytebank\obj\Debug\net6.0\bytebank.genruntimeconfig.cache
+D:\Github\AluraProjects\AluraCSharp\bytebankOrientacaoObje\bytebank\bytebank\obj\Debug\net6.0\ref\bytebank.dll
