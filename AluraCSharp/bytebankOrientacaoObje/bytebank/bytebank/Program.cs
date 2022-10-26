@@ -9,6 +9,6 @@ contaDoAndre.saldo = 100;
 
 Console.WriteLine("Saldo da conta do andré= " + contaDoAndre.saldo);
 
-contaDoAndre.Depositar(10);
+contaDoAndre.Sacar(100);
 
 Console.WriteLine("Saldo da conta do andré= " + contaDoAndre.saldo);
