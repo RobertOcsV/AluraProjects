@@ -1,46 +1,49 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace bytebank
+namespace bytebank.Contas
 {
     public class ContaCorrente
     {
         public int numero_agencia;
         public string conta;
-        public Cliente titular;
+        public Titular.Cliente titular;
         public double saldo;
 
         public void Depositar(double valor)
         {
-            this.saldo += valor;
+            saldo += valor;
         }
 
         public bool Sacar(double valor)
         {
-            if (valor > this.saldo)
+            if (valor > saldo)
             {
-                this.saldo = saldo;
+                saldo = saldo;
                 Console.WriteLine("valor de saque maior que o cliente possui");
                 return false;
             }
-            else {
-                this.saldo -= valor;
+            else
+            {
+                saldo -= valor;
                 return true;
             }
         }
 
         public bool transferir(double valor, ContaCorrente destino)
         {
-            if (valor > this.saldo)
+            if (valor > saldo)
             {
                 return false;
             }
-            else {
+            else
+            {
 
-                this.Sacar(valor);
+                Sacar(valor);
                 destino.Depositar(valor);
                 return true;
             }

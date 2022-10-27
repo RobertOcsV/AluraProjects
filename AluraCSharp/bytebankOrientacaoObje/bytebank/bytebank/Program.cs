@@ -1,4 +1,5 @@
-﻿using bytebank;
+﻿using bytebank.Contas;
+using bytebank.Titular;
 
 //ContaCorrente contaDoAndre = new ContaCorrente();
 
