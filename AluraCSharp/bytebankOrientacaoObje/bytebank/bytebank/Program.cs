@@ -29,17 +29,23 @@ using bytebank.Titular;
 
 //Console.WriteLine(valor2 == valor);
 
-Cliente cliente = new Cliente();
+//Cliente cliente = new Cliente();
 
-cliente.nome = "louise";
-cliente.cpf = "1862937-2";
-cliente.profissao = "Analista";
+//cliente.nome = "louise";
+//cliente.cpf = "1862937-2";
+//cliente.profissao = "Analista";
 
-ContaCorrente conta = new ContaCorrente();
-conta.titular = cliente;
+//ContaCorrente conta = new ContaCorrente();
+//conta.titular = cliente;
 
-conta.conta = "1082-x";
-conta.numero_agencia = 12;
-conta.saldo = 192;
+//conta.conta = "1082-x";
+//conta.numero_agencia = 12;
+//conta.saldo = 192;
 
-Console.WriteLine("titular = " + conta.titular.nome);
+//Console.WriteLine("titular = " + conta.titular.nome);
+
+ContaCorrente conta3 = new ContaCorrente();
+
+conta3.DefinirSaldo(110);
+
+Console.WriteLine(conta3.ObterSaldo());
