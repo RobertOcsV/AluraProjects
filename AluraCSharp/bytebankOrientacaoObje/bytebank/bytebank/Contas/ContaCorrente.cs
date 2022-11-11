@@ -9,6 +9,13 @@ namespace bytebank.Contas
 {
     public class ContaCorrente
     {
+
+        ContaCorrente() 
+        { 
+            
+        }
+
+
         private int numero_agencia;
 
         public int Numero_agencia {
@@ -26,7 +33,7 @@ namespace bytebank.Contas
         public string conta;
         public Titular.Cliente titular;
         private double saldo;
-        g
+        
 
         public void Depositar(double valor)
         {
