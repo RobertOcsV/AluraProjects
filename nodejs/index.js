@@ -2,28 +2,21 @@ import fs from 'fs';
 import chalk from 'chalk';
 
 function trataErro(erro){
-    console.log(erro)
     throw new Error(chalk.red(erro.code, 'irmao, deu pau aí, não tem arquivo no diretório'))
 }
 
+async function pegaArquivo(caminhoDoArquivo){
 
-// function pegaArquivo(caminhoDoArquivo){
-//     const encoding = 'utf-8';
-//     fs.readFile(caminhoDoArquivo, encoding, (erro, texto) =>{
-//         if(erro){
-//             trataErro(erro);
-//         }
-//         console.log(chalk.green(texto));
-//     } )
-// }
-
-
-function pegaArquivo(caminhoDoArquivo){
+    try{
     const encoding = 'utf-8';
-    fs.promises
-        .readFile(caminhoDoArquivo, encoding)
-        .then((texto)=>{console.log(chalk.green(texto))})
-        .catch(trataErro)
+    const texto = await fs.promises.readFile(caminhoDoArquivo, encoding)
+    console.log(chalk.green(texto));
+    } catch(erro) {
+        trataErro(erro);
+    } 
 }
 
-pegaArquivo('./arquivos/texto.md');
+
+pegaArquivo('./arquivos/texto.md'); 
+setInterval(() => pegaArquivo('./arquivos/'), 5000);
+
