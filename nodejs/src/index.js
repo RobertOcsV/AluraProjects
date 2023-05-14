@@ -56,3 +56,5 @@ pegaArquivo('./arquivos/texto.md');
 
 
 
+
+export default pegaArquivo;
