@@ -14,9 +14,6 @@ function extraiLinks(texto) {
     return resultados.length !== 0 ? resultados : 'não há links no arquivo';
 }
 
-
-
-
 async function pegaArquivo(caminhoDoArquivo){
 
     try{
