@@ -10,7 +10,7 @@ async function checaStatus(listaURLs){
         listaURLs.map(async (url)=>{
             try{
                 const response = await fetch(url)
-                return response.status;    
+                return `${response.status} - ${response.statusText}`;    
             } catch(erro) {
                 return manejaErros(erro);
             }
