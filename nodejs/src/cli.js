@@ -2,6 +2,7 @@ import chalk from 'chalk';
 import fs from 'fs';
 import pegaArquivo from "./index.js";
 import listaValidada from './http-validacao.js';
+import yargs from './yargs.cjs';
 
 
 const caminho = process.argv;
