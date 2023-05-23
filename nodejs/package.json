@@ -6,9 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cli": "node ./src/cli.js ./arquivos/texto.md",
+    "cli": "node ./src/cli.js",
     "cli:valida": "node ./src/cli.js ./arquivos/texto.md --valida"
-    
   },
   "repository": {
     "type": "git",
@@ -22,6 +21,7 @@
   },
   "homepage": "https://github.com/alura-cursos/2708-node-lib-md#readme",
   "dependencies": {
-    "chalk": "5.0.1"
+    "chalk": "5.0.1",
+    "yargs": "^17.7.2"
   }
 }
