@@ -6,7 +6,7 @@ export const ListaSuspensa = (props) => {
 
         <div className='lista-suspensa'>
             <label>{props.label}</label>
-            <select>
+            <select required={props.obrigatorio}>
                 {props.itens.map((item, index) => <option key={item}>{item}</option>)}
             </select>
         </div>
