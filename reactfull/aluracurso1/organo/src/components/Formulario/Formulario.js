@@ -19,6 +19,7 @@ export const Formulario = (props) => {
     'Data Science',
     'Devops',
     'UX e Design',
+    'Mobile',
     'Inovação e Gestão'
 
 
