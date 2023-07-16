@@ -1,3 +1,9 @@
+new tasks: 
+
+ - if wrap cards, add a sidebar row
+ - check if already there a card with the same name
+ 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
