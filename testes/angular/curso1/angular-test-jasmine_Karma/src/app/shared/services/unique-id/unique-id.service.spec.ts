@@ -9,8 +9,10 @@ describe(UniqueIdService.name, () => {
 
   it(`#${UniqueIdService.prototype.generateUniqueIdWithPrefix.name} should generate id when called with prefix Should not generate duplicate IDs when called multiple times`, () => {
       const service = new UniqueIdService();
-      const firstId = service.generateUniqueIdWithPrefix('app');
-      const secondId = service.generateUniqueIdWithPrefix('app');
-      expect(firstId).not.toBe(secondId)
+      const ids = new Set();
+      for ( let i = 0; i < 50; i++){
+        ids.add(service.generateUniqueIdWithPrefix('app'))
+      }
+      expect(ids.size).toBe(50);
   });
 });
