@@ -9,6 +9,8 @@ import { BannerComponent } from './shared/banner/banner.component';
 import { CardComponent } from './shared/card/card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './app-material/app-material.module';
+import { ContainerComponent } from './shared/container/container.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { AppMaterialModule } from './app-material/app-material.module';
     HeaderComponent,
     FooterComponent,
     BannerComponent,
-    CardComponent
+    CardComponent,
+    ContainerComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
