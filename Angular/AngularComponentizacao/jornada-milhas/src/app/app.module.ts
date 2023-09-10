@@ -25,6 +25,7 @@ import { AppMaterialModule } from './app-material/app-material.module';
     AppMaterialModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }
