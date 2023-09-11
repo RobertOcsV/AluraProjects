@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppMaterialModule } from './app-material/app-material.module';
 import { ContainerComponent } from './shared/container/container.component';
 import { HomeComponent } from './pages/home/home.component';
+import { CardBuscaComponent } from './shared/card-busca/card-busca.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './pages/home/home.component';
     BannerComponent,
     CardComponent,
     ContainerComponent,
-    HomeComponent
+    HomeComponent,
+    CardBuscaComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +32,7 @@ import { HomeComponent } from './pages/home/home.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
+  schemas: []
 
 })
 export class AppModule { }
