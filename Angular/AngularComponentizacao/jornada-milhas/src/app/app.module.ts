@@ -12,6 +12,8 @@ import { AppMaterialModule } from './app-material/app-material.module';
 import { ContainerComponent } from './shared/container/container.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CardBuscaComponent } from './shared/card-busca/card-busca.component';
+import { CardTextComponent } from './shared/card-text/card-text.component';
+import { FormBuscaComponent } from './shared/form-busca/form-busca.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { CardBuscaComponent } from './shared/card-busca/card-busca.component';
     CardComponent,
     ContainerComponent,
     HomeComponent,
-    CardBuscaComponent
+    CardBuscaComponent,
+    CardTextComponent,
+    FormBuscaComponent
   ],
   imports: [
     BrowserModule,
