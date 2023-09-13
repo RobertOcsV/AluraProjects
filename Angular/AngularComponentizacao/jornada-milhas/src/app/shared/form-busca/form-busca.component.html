@@ -30,6 +30,22 @@
         <input matInput placeholder="Destino">
         <mat-icon matPrefix>flight_land</mat-icon>
       </mat-form-field>
+
+      <mat-form-field class="input-container">
+        <mat-label>Data de ida</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field class="input-container">
+        <mat-label>Data de volta</mat-label>
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <button mat-flat-button color="primary">BUSCAR</button>
+
     </div>
   </form>
 </app-card>
