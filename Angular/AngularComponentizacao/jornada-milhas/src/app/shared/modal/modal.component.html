@@ -1,1 +1,56 @@
-<p>modal works!</p>
+<section class="modal">
+  <h1 mat-dialog-title>Viajante</h1>
+  <div mat-dialog-content>
+    <div class="selecao-idade">
+      <ul>
+        <li>Adultos</li>
+        <li>(Acima de 12 anos)</li>
+        <li>
+          <button class="decremento" mat-mini-fab>
+            <img src="assets\images\do_not_disturb_on.png" alt="Operador de subtração">
+          </button>
+          <span>1</span>
+          <button class="incremento" mat-mini-fab>
+            <img src="assets\images\add_circle.png" alt="Operador de Adição">
+          </button>
+        </li>
+      </ul>
+      <ul>
+        <li>Crianças</li>
+        <li>(Entre 2 e 11 anos)</li>
+        <li>
+          <button class="decremento" mat-mini-fab>
+            <img src="assets\images\do_not_disturb_on.png" alt="Operador de subtração">
+          </button>
+          <span>1</span>
+          <button class="incremento" mat-mini-fab>
+            <img src="assets\images\add_circle.png" alt="Operador de Adição">
+          </button>
+        </li>
+      </ul>
+      <ul>
+        <li>Bebês</li>
+        <li>(Até 2 anos)</li>
+        <li>
+          <button class="decremento" mat-mini-fab>
+            <img src="assets\images\do_not_disturb_on.png" alt="Operador de subtração">
+          </button>
+          <span>1</span>
+          <button class="incremento" mat-mini-fab>
+            <img src="assets\images\add_circle.png" alt="Operador de Adição">
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="flex-container">
+      <mat-chip-listbox aria-label="Seleção de passagens">
+        <mat-chip-option selected>Adulto</mat-chip-option>
+        <mat-chip-option>Executiva</mat-chip-option>
+      </mat-chip-listbox>
+  </div>
+  </div>
+  <div mat-dialog-actions class="container-button">
+    <button mat-button mat-dialog-close background-color="#E8DEF8">Cancelar</button>
+    <button mat-flat-button color="primary">Aplicar</button>
+  </div>
+</section>
