@@ -17,6 +17,7 @@ import { CardBuscaComponent } from './shared/card-busca/card-busca.component';
 import { CardTextComponent } from './shared/card-text/card-text.component';
 import { FormBuscaComponent } from './shared/form-busca/form-busca.component';
 import { ModalComponent } from './shared/modal/modal.component';
+import { BotaoControleComponent } from './shared/botao-controle/botao-controle.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ModalComponent } from './shared/modal/modal.component';
     CardBuscaComponent,
     CardTextComponent,
     FormBuscaComponent,
-    ModalComponent
+    ModalComponent,
+    BotaoControleComponent
   ],
   imports: [
     BrowserModule,
