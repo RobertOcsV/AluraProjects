@@ -18,6 +18,7 @@ import { CardTextComponent } from './shared/card-text/card-text.component';
 import { FormBuscaComponent } from './shared/form-busca/form-busca.component';
 import { ModalComponent } from './shared/modal/modal.component';
 import { BotaoControleComponent } from './shared/botao-controle/botao-controle.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { BotaoControleComponent } from './shared/botao-controle/botao-controle.c
     AppMaterialModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule
 
 
   ],
