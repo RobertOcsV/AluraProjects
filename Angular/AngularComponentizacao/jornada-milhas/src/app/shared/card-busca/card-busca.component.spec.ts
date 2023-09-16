@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { PromocaoService } from 'src/app/core/services/promocao.service';
 import { CardBuscaComponent } from './card-busca.component';
 
 describe('CardBuscaComponent', () => {
@@ -18,4 +18,8 @@ describe('CardBuscaComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('Should return object promocao ', () => {
+     const promocaoArray = []
+  })
 });
