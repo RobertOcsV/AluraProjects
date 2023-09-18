@@ -44,7 +44,8 @@ import { PromocoesComponent } from './pages/home/promocoes/promocoes.component';
     AppMaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
 
 
   ],
