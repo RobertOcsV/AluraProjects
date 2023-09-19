@@ -9,7 +9,6 @@ async function bootstrap() {
   app.enableCors({
     origin: 'http://localhost:4200', // Troque para o domínio do seu frontend
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true, // Habilita o envio de cookies e cabeçalhos de autenticação
   });
 
   const config = new DocumentBuilder()

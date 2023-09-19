@@ -20,6 +20,7 @@ import { ModalComponent } from './shared/modal/modal.component';
 import { BotaoControleComponent } from './shared/botao-controle/botao-controle.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PromocoesComponent } from './pages/home/promocoes/promocoes.component';
+import { DropdownUfComponent } from './shared/form-busca/dropdown-uf/dropdown-uf.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { PromocoesComponent } from './pages/home/promocoes/promocoes.component';
     FormBuscaComponent,
     ModalComponent,
     BotaoControleComponent,
-    PromocoesComponent
+    PromocoesComponent,
+    DropdownUfComponent
   ],
   imports: [
     BrowserModule,
