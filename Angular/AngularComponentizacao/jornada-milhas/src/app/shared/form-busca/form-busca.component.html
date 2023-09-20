@@ -2,50 +2,54 @@
   <form [formGroup]="formBuscaService.formBusca">
     <h2>Passagens</h2>
     <div class="flex-container">
-        <mat-button-toggle-group aria-label="Tipo de passagem" formControlName="somenteIda">
-          <mat-button-toggle [value]="false">
-            <mat-icon *ngIf="!formBuscaService.formBusca.get('somenteIda')?.value">check</mat-icon>
-            IDA E VOLTA
-          </mat-button-toggle>
-          <mat-button-toggle [value]="true">
-            <mat-icon *ngIf="formBuscaService.formBusca.get('somenteIda')?.value">check</mat-icon>
-            SOMENTE IDA
-          </mat-button-toggle>
-        </mat-button-toggle-group>
-        <mat-chip-listbox (click)="openDialog()" aria-label="Seleção de passagens">
-          <mat-chip-option selected>1 adulto</mat-chip-option>
-          <mat-chip-option>Econômica</mat-chip-option>
-        </mat-chip-listbox>
+      <mat-button-toggle-group aria-label="Tipo de passagem" formControlName="somenteIda">
+        <mat-button-toggle [value]="false">
+          <mat-icon *ngIf="!formBuscaService.formBusca.get('somenteIda')?.value">check</mat-icon>
+          IDA E VOLTA
+        </mat-button-toggle>
+        <mat-button-toggle  [value]="true">
+          <mat-icon *ngIf="formBuscaService.formBusca.get('somenteIda')?.value">check</mat-icon>
+          SOMENTE IDA
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+        <mat-chip (click)="openDialog()">
+        <div class="inner">
+          <mat-icon>check</mat-icon> 1 adulto
+        </div>
+      </mat-chip>
+      <mat-chip (click)="openDialog()">
+        <div class="inner">
+          <mat-icon>check</mat-icon> Econômica
+        </div>
+      </mat-chip>
     </div>
     <div class="flex-container">
-
-      <app-dropdown-uf label="Origem" prefixIcon="flight_takeoff"></app-dropdown-uf>
+      <app-dropdown-uf
+        label="Origem"
+        iconePrefixo="flight_takeoff"
+        [control]="formBuscaService.obterControle('origem')"
+      />
       <button mat-icon-button>
         <mat-icon>sync_alt</mat-icon>
       </button>
-      <app-dropdown-uf label="Destino" prefixIcon="flight_land"></app-dropdown-uf>
-      <!-- <mat-form-field  class="input-container" appearance="outline">
-        <mat-label>Destino</mat-label>
-        <mat-icon matSuffix>search</mat-icon>
-        <input matInput placeholder="Destino">
-        <mat-icon matPrefix>flight_land</mat-icon>
-      </mat-form-field> -->
-
-      <mat-form-field class="input-container">
+      <app-dropdown-uf
+        label="Destino"
+        iconePrefixo="flight_land"
+        [control]="formBuscaService.obterControle('destino')"
+      />
+      <mat-form-field class="input-container" appearance="outline">
         <mat-label>Data de ida</mat-label>
-        <input matInput [matDatepicker]="picker">
-        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
+        <input matInput [matDatepicker]="ida">
+        <mat-datepicker-toggle matIconSuffix [for]="ida"></mat-datepicker-toggle>
+        <mat-datepicker #ida></mat-datepicker>
       </mat-form-field>
-      <mat-form-field class="input-container">
-        <mat-label>Data de volta</mat-label>
-        <input matInput [matDatepicker]="pickerback">
-        <mat-datepicker-toggle matIconSuffix [for]="pickerback"></mat-datepicker-toggle>
-        <mat-datepicker #pickerback></mat-datepicker>
+      <mat-form-field class="input-container" appearance="outline">
+        <mat-label>Data da volta</mat-label>
+        <input matInput [matDatepicker]="volta">
+        <mat-datepicker-toggle matIconSuffix [for]="volta"></mat-datepicker-toggle>
+        <mat-datepicker #volta></mat-datepicker>
       </mat-form-field>
-
       <button mat-flat-button color="primary">BUSCAR</button>
-
     </div>
   </form>
 </app-card>
