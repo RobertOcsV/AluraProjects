@@ -44,8 +44,12 @@
     </div>
     <div class="flex-container">
       <mat-chip-listbox aria-label="Seleção de passagens">
-        <mat-chip-option selected>Adulto</mat-chip-option>
-        <mat-chip-option>Executiva</mat-chip-option>
+        <mat-chip-option value="Econômica" [selected]="formBuscaService.formBusca.get('tipo')?.value === 'Econômica'" (selectionChange)="formBuscaService.alterarTipo($event, 'Econômica')">
+          Econômica
+        </mat-chip-option>
+        <mat-chip-option value="Executiva" [selected]="formBuscaService.formBusca.get('tipo')?.value === 'Executiva'" (selectionChange)="formBuscaService.alterarTipo($event, 'Executiva')">
+          Executiva
+        </mat-chip-option>
       </mat-chip-listbox>
   </div>
   </div>
