@@ -29,4 +29,8 @@ private year = this.today.getFullYear();
     end: new FormControl(new Date(this.year, this.month, 19)),
   });
 
+  buscar() {
+    console.log(this.formBuscaService.formBusca.value)
+  }
+
 }
