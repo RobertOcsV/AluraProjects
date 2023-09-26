@@ -1,3 +1,4 @@
+
 export interface Promocao {
   id: number
   destino: string
@@ -10,3 +11,10 @@ export interface UnidadeFederativa {
   nome: string;
   sigla: string;
 }
+
+export interface Frutas {
+  id: number;
+  nome: string;
+  preco: string;
+}
+
