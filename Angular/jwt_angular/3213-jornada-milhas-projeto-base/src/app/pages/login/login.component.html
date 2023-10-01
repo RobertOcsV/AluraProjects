@@ -25,11 +25,12 @@
                         <mat-label>Senha</mat-label>
                         <input formControlName="senha" matInput type="password" placeholder="Digite sua senha">
                         <mat-error *ngIf="loginForm.get('senha')?.errors?.['required']">Senha obrigatória</mat-error>
+                        <mat-error *ngIf="loginForm.get('senha')?.errors?.['minlength']">Senha deve ter no mínimo 5 caracteres</mat-error>
 
                     </mat-form-field>
                 </mat-card-content>
                 <mat-card-actions>
-                    <button (click)="login()" mat-flat-button color="primary">ACESSAR MINHA CONTA</button>
+                    <button  [disabled]="loginForm.invalid" (click)="login()" mat-flat-button color="primary">ACESSAR MINHA CONTA</button>
                 </mat-card-actions>
                 <p>Ainda não possui conta?
                     Clique <a><strong><u>aqui para se cadastrar</u></strong> </a>
