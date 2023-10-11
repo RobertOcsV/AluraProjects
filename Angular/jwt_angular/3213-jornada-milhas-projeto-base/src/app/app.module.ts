@@ -26,6 +26,9 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { ModalComponent } from './shared/modal/modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatCheckboxModule } from '@angular/material/checkbox'
 
 
 import { BotaoControleComponent } from './shared/botao-controle/botao-controle.component';
@@ -79,7 +82,14 @@ import { FormularioComponent } from './shared/formulario/formulario.component';
     MatDialogModule,
     HttpClientModule,
     ReactiveFormsModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatRadioModule,
+    MatDividerModule,
+    MatCheckboxModule
+
+
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
