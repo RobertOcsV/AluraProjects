@@ -1,11 +1,11 @@
 <mat-form-field class="input-container" appearance="outline">
     <mat-label>{{ label }}</mat-label>
-    <mat-icon matPrefix>
+    <mat-icon matPrefix *ngIf="iconePrefixo">
         {{ iconePrefixo }}
     </mat-icon>
     <input
         matInput
-        placeholder="Origem"
+        [placeholder]="placeholder"
         [formControl]="control"
         [name]="label"
         ngDefaultControl
