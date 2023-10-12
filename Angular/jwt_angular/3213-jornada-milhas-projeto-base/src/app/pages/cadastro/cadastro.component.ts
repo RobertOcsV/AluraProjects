@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./cadastro.component.scss']
 })
 export class CadastroComponent {
+  perfilComponent = false;
 
 }
