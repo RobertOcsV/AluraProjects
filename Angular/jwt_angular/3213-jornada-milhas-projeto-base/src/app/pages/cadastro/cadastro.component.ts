@@ -1,3 +1,4 @@
+import { FormularioService } from './../../core/services/formulario.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -8,9 +9,11 @@ import { Component } from '@angular/core';
 export class CadastroComponent {
   perfilComponent = false;
 
+  constructor(private FormularioService: FormularioService){}
 
   cadastrar(){
-    console.log('Cadastro Realizado com sucesso')
+    const formCadastro = this.FormularioService.getCadastro()
+    console.log('Cadastro Realizado com sucesso', formCadastro)
   }
 
 }
