@@ -15,7 +15,7 @@ export class TokenService {
   }
 
   retornarToken(){
-    return localStorage.getItem(KEY)
+    return localStorage.getItem(KEY) ?? ""
   }
 
   possuiToken(){
