@@ -2,6 +2,7 @@ import { CadastroService } from './../../core/services/cadastro.service';
 import { PessoaUsuaria } from 'src/app/core/types/type';
 import { FormularioService } from './../../core/services/formulario.service';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro',
@@ -12,7 +13,7 @@ export class CadastroComponent {
   perfilComponent = false;
 
 
-  constructor(private FormularioService: FormularioService, private cadastroService: CadastroService){}
+  constructor(private FormularioService: FormularioService, private cadastroService: CadastroService, private router: Router){}
 
   cadastrar(){
 
@@ -22,7 +23,8 @@ export class CadastroComponent {
       const novoCadastro = formCadastro.getRawValue() as PessoaUsuaria
       this.cadastroService.cadastrar(novoCadastro).subscribe({
         next: (value: any) => {
-          console.log('Cadastro Realizado com sucesso', value)
+          console.log('Cadastro Realizado com sucesso', value);
+          this.router.navigate(['/login'])
         },
         error: (err) => {
           console.log('Erro ao realizar cadastro', err)
