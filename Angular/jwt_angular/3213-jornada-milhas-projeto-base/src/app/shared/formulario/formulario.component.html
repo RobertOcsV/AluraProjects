@@ -2,7 +2,7 @@
   <mat-card>
     <form [formGroup]="cadastroForm">
       <mat-card-title>
-        Crie sua conta
+        {{titulo}}
       </mat-card-title>
       <section>
         <div class="acoesPerfil" *ngIf="perfilComponent">
@@ -90,25 +90,28 @@
               <mat-error *ngIf="cadastroForm.get('confirmarEmail')?.errors?.['required']">Confirmação de E-mail é
                 obrigatória</mat-error>
               <mat-error *ngIf="cadastroForm.get('confirmarEmail')?.errors?.['email']">E-mail inválido</mat-error>
-              <mat-error *ngIf="cadastroForm.get('confirmarEmail')?.errors?.['equalTo']">E-mail não coincidem</mat-error>
+              <mat-error *ngIf="cadastroForm.get('confirmarEmail')?.errors?.['equalTo']">E-mail não
+                coincidem</mat-error>
             </mat-form-field>
             <mat-form-field appearance="outline">
               <mat-label>Confirmar Senha</mat-label>
               <input matInput formControlName="confirmarSenha" type="password" placeholder="Repita sua senha">
-              <mat-error *ngIf="cadastroForm.get('confirmarSenha')?.errors?.['equalTo']">Senhas não coincidem</mat-error>
+              <mat-error *ngIf="cadastroForm.get('confirmarSenha')?.errors?.['equalTo']">Senhas não
+                coincidem</mat-error>
               <mat-error *ngIf="cadastroForm.get('confirmarSenha')?.errors?.['required']">Confirmação de Senha é
                 obrigatória</mat-error>
             </mat-form-field>
           </div>
         </div>
-        <mat-checkbox formControlName="aceitarTermos" color="primary" class="full-width">Li e aceito os termos e
+        <mat-checkbox *ngIf="!perfilComponent"  formControlName="aceitarTermos" color="primary" class="full-width">Li e aceito os termos e
           condições deste cadastro *</mat-checkbox>
         <mat-error *ngIf="cadastroForm.get('aceitarTermos')?.invalid && cadastroForm.get('aceitarTermos')?.dirty">
           Você precisa aceitar os termos e condições para efetuar o cadastro
         </mat-error>
       </mat-card-content>
       <mat-card-actions class="full-width">
-        <button (click)="executarAcao()" mat-flat-button [disabled]="cadastroForm.invalid" color="primary">CADASTRAR
+        <button  [class.perfil-button]="perfilComponent" (click)="executarAcao()" mat-flat-button [disabled]="cadastroForm.invalid"
+          color="primary">{{ textoBotao }}
         </button>
       </mat-card-actions>
     </form>

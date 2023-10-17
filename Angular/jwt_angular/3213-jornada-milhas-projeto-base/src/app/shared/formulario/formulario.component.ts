@@ -12,7 +12,9 @@ export class FormularioComponent {
 
   cadastroForm!: FormGroup;
   estadoControl = new FormControl<UnidadeFederativa | null>(null, Validators.required);
-  @Input() perfilComponent!: boolean;
+  @Input() perfilComponent = false;
+  @Input() titulo: string = 'Crie sua conta';
+  @Input() textoBotao: string = 'CADASTRAR';
   @Output() acaoClique: EventEmitter<any> = new EventEmitter<any>()
 
   constructor(
