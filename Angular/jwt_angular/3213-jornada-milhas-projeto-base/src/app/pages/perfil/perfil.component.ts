@@ -4,6 +4,7 @@ import { FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 import { FormularioService } from 'src/app/core/services/formulario.service';
 import { TokenService } from 'src/app/core/services/token.service';
+import { UserService } from 'src/app/core/services/user.service';
 import { PessoaUsuaria } from 'src/app/core/types/type';
 
 @Component({
@@ -25,7 +26,8 @@ export class PerfilComponent implements OnInit {
     private tokenService: TokenService,
     private cadastroService: CadastroService,
     private formularioService: FormularioService,
-    private router: Router
+    private router: Router,
+    private userService: UserService
 
     ){}
 
@@ -81,7 +83,8 @@ export class PerfilComponent implements OnInit {
   }
 
   deslogar(){
-    console.log('Logout realizado com sucesso')
+    this.userService.logout();
+    this.router.navigate(['/login'])
   }
 
 }
