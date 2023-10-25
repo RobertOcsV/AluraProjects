@@ -1,7 +1,7 @@
-import { CadastroService } from './../../core/services/cadastro.service';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { CadastroService } from 'src/app/core/services/cadastro.service';
 import { FormularioService } from 'src/app/core/services/formulario.service';
 import { TokenService } from 'src/app/core/services/token.service';
 import { UserService } from 'src/app/core/services/user.service';
@@ -12,30 +12,29 @@ import { PessoaUsuaria } from 'src/app/core/types/type';
   templateUrl: './perfil.component.html',
   styleUrls: ['./perfil.component.scss']
 })
-export class PerfilComponent implements OnInit {
-  titulo = 'Olá ';
+export class PerfilComponent implements OnInit{
+  titulo = 'Olá, ';
   textoBotao = 'ATUALIZAR';
   perfilComponent = true;
 
-  nome = '';
-  token = '';
   cadastro!: PessoaUsuaria;
+  token: string = '';
+  nome: string = '';
   form!: FormGroup<any> | null;
 
   constructor(
-    private tokenService: TokenService,
     private cadastroService: CadastroService,
+    private tokenService: TokenService,
     private formularioService: FormularioService,
-    private router: Router,
-    private userService: UserService
+    private userService: UserService,
+    private router: Router
+  ) { }
 
-    ){}
-
-  ngOnInit(): void {
+  ngOnInit() {
     this.token = this.tokenService.retornarToken();
     this.cadastroService.buscarCadastro().subscribe(cadastro => {
       this.cadastro = cadastro;
-      this.nome = this.cadastro.nome
+      this.nome = cadastro.nome;
       this.carregarFormulario();
     })
   }
@@ -44,23 +43,22 @@ export class PerfilComponent implements OnInit {
     this.form = this.formularioService.getCadastro();
     this.form?.patchValue({
       id: this.cadastro.id,
-      nome: this.cadastro.nome ,
+      nome: this.cadastro.nome,
       nascimento: this.cadastro.nascimento,
       cpf: this.cadastro.cpf,
-      telefone: this.cadastro.telefone,
+      cidade: this.cadastro.cidade,
       email: this.cadastro.email,
       senha: this.cadastro.senha,
       genero: this.cadastro.genero,
-      cidade: this.cadastro.cidade,
-      estado: this.cadastro.estado
-    })
+      telefone: this.cadastro.telefone,
+      estado: this.cadastro.estado,
+    });
   }
 
-
-  atualizar(){
+  atualizar() {
     const dadosAtualizados = {
       id: this.form?.value.id,
-      nome: this.form?.value.nome ,
+      nome: this.form?.value.nome,
       nascimento: this.form?.value.nascimento,
       cpf: this.form?.value.cpf,
       telefone: this.form?.value.telefone,
@@ -73,18 +71,17 @@ export class PerfilComponent implements OnInit {
 
     this.cadastroService.editarCadastro(dadosAtualizados).subscribe({
       next: () => {
-        alert('Cadastro editado com Sucesso')
-        this.router.navigate(['/'])
+        alert('Cadastro editado com sucesso')
+        this.router.navigate(['/']);
       },
       error: (err) => {
-        console.log('Erro ao atualizar cadastro', err)
+        console.log(err)
       }
     })
   }
 
-  deslogar(){
+  deslogar() {
     this.userService.logout();
-    this.router.navigate(['/login'])
+    this.router.navigate(['/login']);
   }
-
 }
