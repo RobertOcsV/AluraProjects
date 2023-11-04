@@ -10,7 +10,7 @@ function alterarStatus(id, event) {
     botao.classList.add("dashboard__item__button--return");
     imagem.classList.add("dashboard__item__img--rented");
   } else {
-    botao.innerHTML = "Alugar";
+    botao.innerHTML === "Alugar";
     botao.classList.remove("dashboard__item__button--return");
     imagem.classList.remove("dashboard__item__img--rented");    
   }
