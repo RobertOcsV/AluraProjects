@@ -15,3 +15,4 @@ function alterarStatus(id, event) {
     imagem.classList.remove("dashboard__item__img--rented");    
   }
 }
+

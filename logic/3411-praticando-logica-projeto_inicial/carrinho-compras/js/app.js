@@ -1,32 +1,65 @@
-// let produtoCar = {    
-//     value,
-//     preco
-// }
-
-const produtos = [];
+const produtosCarrinho = [];
 
 function adicionar() {
-   let produto = document.getElementById('produto').value
-   let nomeProduto = produto.split('-')[0]
-   let valorUnitario = produto.split('R$')[1]
-   let qta = document.getElementById('quantidade')
-   alert(nomeProduto)
-   alert(valorUnitario)
-   alert(qta.value)
-   let preco = quantidade.value * valorUnitario
-   alert(preco)
+  let produtoSelecionado = document.getElementById('produto').value;
+  let nomeProduto = produtoSelecionado.split('-')[0];
+  let valorUnitario = parseFloat(produtoSelecionado.split('R$')[1]);
+  let quantidade = parseInt(document.getElementById('quantidade').value);
+
+
+  const produtoExistente = produtosCarrinho.find(produto => produto.nome === nomeProduto);
+
+   if(produtoExistente.quantidade === ){
+      alert("insira a quantidade do produto")
+   }
+
+  if (produtoExistente) {
+    produtoExistente.quantidade += quantidade;
+  } else {
+  
+    const novoProduto = {
+      nome: nomeProduto,
+      valorUnitario: valorUnitario,
+      quantidade: quantidade
+    };
+    produtosCarrinho.push(novoProduto);
+  }
+
+
+  atualizarCarrinho();
 }
 
-// document.querySelector(".botao-adicionar").addEventListener("click", function () {
-//     //selecionando select de produtos
-//     const produtosOpcoes = document.getElementById('produto');
+function atualizarCarrinho() {
+  let carrinho = document.getElementById('lista-produtos');
+  carrinho.innerHTML = '';
+
+  for (const produto of produtosCarrinho) {
+    let preco = produto.quantidade * produto.valorUnitario;
+    carrinho.innerHTML += `
+      <section class="carrinho__produtos__produto">
+        <span class="texto-azul">x${produto.quantidade}</span> ${produto.nome} <span class="texto-azul">R$${preco}</span>
+      </section>`;
+  }
 
 
-//     const produtoSelecionado = produtosOpcoes.options[produtosOpcoes.selectedIndex].text;
-//     const produtoValor = produtosOpcoes.options[produtosOpcoes.selectedIndex].getAttribute('preco');
-//     const qta = produtosOpcoes.querySelector(".quantidade-input")
-    
-    
-//     console.log(`O produto adicionado foi: ${produtoSelecionado}, e a quantidade foi: ${qta} e o preço foi: ${produtoValor}`);
-//     let total 
-// });
+  atualizarValorTotal();
+}
+
+function atualizarValorTotal() {
+  let total = 0;
+  for (const produto of produtosCarrinho) {
+    total += produto.quantidade * produto.valorUnitario;
+  }
+
+
+  document.getElementById('valor-total').textContent = `R$${total.toFixed(2)}`;
+}
+
+function limpar() {
+
+  produtosCarrinho.length = 0;
+
+ 
+  atualizarCarrinho();
+  atualizarValorTotal();
+}
