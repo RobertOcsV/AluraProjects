@@ -1,30 +1,19 @@
-let qtdPistaElement = parseInt(
-  document.getElementById("qtd-pista").textContent
-);
-let qtdSuperiorElement = parseInt(
-  document.getElementById("qtd-superior").textContent
-);
-let qtdInferiorElement = parseInt(
-  document.getElementById("qtd-inferior").textContent
-);
+let qtdPistaElement = document.getElementById("qtd-pista").innerHTML = 100
+let qtdSuperiorElement = document.getElementById("qtd-superior").innerHTML = 200
+let qtdInferiorElement = document.getElementById("qtd-inferior").innerHTML = 400
 
 function comprar() {
-
-  let tipoIngresso = document.getElementById("tipo-ingresso").value;
+  let tipoIngresso = document.getElementById("tipo-ingresso");
   let quantidadeIngressos = parseInt(document.getElementById("qtd").value);
+  let ingressoSelect =  document.getElementById(`qtd-${tipoIngresso.value}`)
 
-  if (tipoIngresso === "inferior" ) {
-    qtdInferiorElement -= quantidadeIngressos;    
-    document.getElementById('qtd-inferior').textContent = qtdInferiorElement
-
-  } else if (tipoIngresso === "superior") {
-    qtdSuperiorElement -= quantidadeIngressos;   
-    document.getElementById('qtd-superior').textContent = qtdSuperiorElement
-  } else {
-    qtdPistaElement -= quantidadeIngressos;    
-    document.getElementById('qtd-pista').textContent = qtdPistaElement
-  }
-
+ if(ingressoSelect.textContent >= 0){
+  alert(`Quantidade de ingressos indisponível para ${tipoIngresso.value}`)
+  
+ } else {
+  alert("Compra realizada")
+  ingressoSelect.innerHTML -= quantidadeIngressos
+ }
 
 }
 
