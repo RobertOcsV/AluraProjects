@@ -7,11 +7,13 @@ function comprar() {
   let quantidadeIngressos = parseInt(document.getElementById("qtd").value);
   let ingressoSelect = document.getElementById(`qtd-${tipoIngresso.value}`);
 
-  if (ingressoSelect.textContent >= 0) {
-    alert("Compra realizada");
-    ingressoSelect.innerHTML -= quantidadeIngressos;
-    
-  } else {
+  
+  if (parseInt(ingressoSelect.textContent) < quantidadeIngressos) {
     alert(`Quantidade de ingressos indisponível para ${tipoIngresso.value}`);
-  }
+  }    
+   else {
+    alert("Compra realizada");
+  
+  ingressoSelect.innerHTML = parseInt(ingressoSelect.innerHTML) - quantidadeIngressos; 
+}
 }
