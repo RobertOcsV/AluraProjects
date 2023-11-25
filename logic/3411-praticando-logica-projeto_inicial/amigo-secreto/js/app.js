@@ -1,13 +1,16 @@
 let peoplelist = [];
 let peopleListSort = [];
 
-
-
 function adicionar() {
+  // peoplelist.forEach(){
+
+  // }
   addPeople = document.getElementById("nome-amigo").value;
   peoplelist.push(addPeople);
   peopleListSort = [...peoplelist];
   updateFriendsList();
+
+
 }
 
 function updateFriendsList() {  
@@ -26,9 +29,13 @@ function sortear() {
 
   sorteio.innerHTML = "";
 
-  peoplelist.forEach((addPeople, i) => {
-    sorteio.innerHTML += `<p id="lista-sorteio">${addPeople} -> ${peopleListSort[i]}</p>`;
-  });
+  for (let i = 0; i < peoplelist.length; i++) {
+  if (i == peoplelist.length - 1) {
+    sorteio.innerHTML += `<p id="lista-sorteio">${peoplelist[i]} -> ${peoplelist[0]}</p>`;
+  } else {
+    sorteio.innerHTML += `<p id="lista-sorteio">${peoplelist[i]} -> ${peoplelist[i + 1]}</p>`;
+  }
+}
 
   console.log(peoplelist, peopleListSort);
 }
