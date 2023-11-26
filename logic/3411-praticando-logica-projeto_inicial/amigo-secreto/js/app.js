@@ -1,20 +1,26 @@
 let peoplelist = [];
 let peopleListSort = [];
+let sorteio = document.getElementById("lista-sorteio");
+let lista = document.getElementById("lista-amigos");
 
 function adicionar() {
-  // peoplelist.forEach(){
-
-  // }
   addPeople = document.getElementById("nome-amigo").value;
-  peoplelist.push(addPeople);
-  peopleListSort = [...peoplelist];
-  updateFriendsList();
 
+  if (peoplelist.includes(addPeople)) {
+    alert(`${addPeople} Já foi incluido(a)`);
+    return;
+  }
 
+  if (addPeople.length >= 3) {
+    peoplelist.push(addPeople);
+    peopleListSort = [...peoplelist];
+    updateFriendsList();
+  } else {
+    alert("é necessário ter 3 caracteres ou mais!");
+  }
 }
 
-function updateFriendsList() {  
-  let lista = document.getElementById("lista-amigos");
+function updateFriendsList() {
   lista.innerHTML = "";
 
   peoplelist.forEach((addPeople) => {
@@ -23,21 +29,24 @@ function updateFriendsList() {
 }
 
 function sortear() {
-  embaralharArray(peoplelist);
-  embaralharArray(peopleListSort);
-  let sorteio = document.getElementById("lista-sorteio");
+  if (peoplelist.length >= 4) {
+    embaralharArray(peoplelist);
+    embaralharArray(peopleListSort);
 
-  sorteio.innerHTML = "";
+    sorteio.innerHTML = "";
 
-  for (let i = 0; i < peoplelist.length; i++) {
-  if (i == peoplelist.length - 1) {
-    sorteio.innerHTML += `<p id="lista-sorteio">${peoplelist[i]} -> ${peoplelist[0]}</p>`;
+    for (let i = 0; i < peoplelist.length; i++) {
+      if (i == peoplelist.length - 1) {
+        sorteio.innerHTML += `<p id="lista-sorteio">${peoplelist[i]} -> ${peoplelist[0]}</p>`;
+      } else {
+        sorteio.innerHTML += `<p id="lista-sorteio">${peoplelist[i]} -> ${
+          peoplelist[i + 1]
+        }</p>`;
+      }
+    }
   } else {
-    sorteio.innerHTML += `<p id="lista-sorteio">${peoplelist[i]} -> ${peoplelist[i + 1]}</p>`;
+    alert("É necessário adicionar pelo menos 4 pessoas");
   }
-}
-
-  console.log(peoplelist, peopleListSort);
 }
 
 function embaralharArray(array) {
@@ -47,10 +56,9 @@ function embaralharArray(array) {
   }
 }
 
-function reiniciar(){
-  peoplelist.length = 0;  
+function reiniciar() {
+  peoplelist.length = 0;
   peopleListSort.length = 0;
-  
-  sortear()
-  updateFriendsList()
+  sorteio.innerHTML = "";
+  lista.innerHTML = "";
 }
