@@ -8,12 +8,16 @@ import { Observable } from 'rxjs';
 })
 export class PensamentoService {
 
+
   private readonly API = 'http://localhost:3000/pensamentos'
 
   constructor(private http: HttpClient) { }
 
-  listar(): Observable<Pensamento[]> {
-    return this.http.get<Pensamento[]>(this.API)
+  listar(pagina: number): Observable<Pensamento[]> {
+    const itensPorPagina = 6;
+
+    // GET /posts?_page=7&_limit=20
+    return this.http.get<Pensamento[]>(`${this.API}?_page=${pagina}&_limit=${itensPorPagina}`)
   }
 
   criar(pensamento: Pensamento): Observable<Pensamento> {
