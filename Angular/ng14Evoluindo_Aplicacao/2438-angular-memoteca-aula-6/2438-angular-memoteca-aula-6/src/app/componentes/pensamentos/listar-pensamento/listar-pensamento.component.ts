@@ -1,7 +1,6 @@
 import { PensamentoService } from './../pensamento.service';
 import { Component, OnInit } from '@angular/core';
 import { Pensamento } from '../pensamento';
-import { subscribeOn } from 'rxjs';
 
 @Component({
   selector: 'app-listar-pensamento',
@@ -11,7 +10,7 @@ import { subscribeOn } from 'rxjs';
 export class ListarPensamentoComponent implements OnInit {
 
   listaPensamentos: Pensamento[] = [];
-  paginaAtual: number = 1
+  paginaAtual: number = 1;
   haMaisPensamentos: boolean = true;
   filtro: string = ''
 
@@ -23,23 +22,22 @@ export class ListarPensamentoComponent implements OnInit {
     })
   }
 
-
   carregarMaisPensamentos() {
-    this.service.listar(++this.paginaAtual, this.filtro).subscribe (listaPensamentos =>{
-      this.listaPensamentos.push(...listaPensamentos);
-      if(!listaPensamentos.length){
-        this.haMaisPensamentos = false
-      }
-    })
+    this.service.listar(++this.paginaAtual, this.filtro)
+      .subscribe(listaPensamentos => {
+        this.listaPensamentos.push(...listaPensamentos);
+        if(!listaPensamentos.length) {
+          this.haMaisPensamentos = false
+        }
+      })
   }
 
-  pesquisarPensamentos(){
+  pesquisarPensamentos() {
     this.haMaisPensamentos = true
     this.paginaAtual = 1;
-    this.service.listar(this.paginaAtual, this.filtro).subscribe(listaPensamentos => {
-      this.listaPensamentos = listaPensamentos
-    })
+    this.service.listar(this.paginaAtual, this.filtro)
+      .subscribe(listaPensamentos => {
+        this.listaPensamentos = listaPensamentos
+      })
   }
-
 }
-
