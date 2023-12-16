@@ -21,6 +21,8 @@
   background-color: #F8F9FE;
   padding: 1rem;
   box-sizing: border-box;
+  overflow: auto;
+  max-height: 300px;
 }
 
 .pensamento .conteudo {
@@ -50,6 +52,7 @@
 
 .pensamento-p {
   width: 262px;
+  height: 260px;
 }
 
 @media screen and (max-width: 768px) {
