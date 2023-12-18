@@ -26,7 +26,7 @@ export class ListarPensamentoComponent implements OnInit {
     this.service.listar(++this.paginaAtual, this.filtro)
       .subscribe(listaPensamentos => {
         this.listaPensamentos.push(...listaPensamentos);
-        if(!listaPensamentos.length) {
+        if (!listaPensamentos.length) {
           this.haMaisPensamentos = false
         }
       })
@@ -39,5 +39,14 @@ export class ListarPensamentoComponent implements OnInit {
       .subscribe(listaPensamentos => {
         this.listaPensamentos = listaPensamentos
       })
+  }
+
+  listarFavoritos() {
+    this.haMaisPensamentos = true
+    this.paginaAtual = 1
+    this.service.listarPensamentosFavoritos(this.paginaAtual, this.filtro)
+     .subscribe(listaPensamentosFavoritos => {
+        this.listaPensamentos = listaPensamentosFavoritos
+     } )
   }
 }
