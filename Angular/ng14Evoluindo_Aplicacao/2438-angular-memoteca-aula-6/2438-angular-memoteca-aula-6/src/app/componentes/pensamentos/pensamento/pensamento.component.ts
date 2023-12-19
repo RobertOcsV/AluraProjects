@@ -25,21 +25,21 @@ export class PensamentoComponent implements OnInit {
   }
 
   larguraPensamento(): string {
-    if(this.pensamento.conteudo.length >= 256) {
+    if (this.pensamento.conteudo.length >= 256) {
       return 'pensamento-g'
     }
     return 'pensamento-p'
   }
 
   mudarIconeFavorito(): string {
-    if(this.pensamento.favorito == false) {
+    if (this.pensamento.favorito == false) {
       return 'inativo'
     }
     return 'ativo'
   }
 
-  atualizarFavoritos(){
-    this.service.mudarFavorito(this.pensamento).subscribe( () => {
+  atualizarFavoritos() {
+    this.service.mudarFavorito(this.pensamento).subscribe(() => {
       this.listaFavoritos.splice(this.listaFavoritos.indexOf(this.pensamento), 1)
     });
 
