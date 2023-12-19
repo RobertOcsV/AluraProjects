@@ -1,0 +1,52 @@
+.banner {
+  background: var(--azul-degrade);
+  color: var(--branco);
+  text-align: center;
+  padding: 1em;
+}
+
+.banner__titulo {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cadastro {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 2em;
+}
+
+.cadastro__imagem {
+  display: block;
+  margin: 3em auto 0 auto;
+}
+
+.cadastro__subtitulo {
+  margin: 1em 0;
+}
+
+.principal {
+  width: 50vw;
+  margin: 5em auto 6em auto;
+}
+
+.principal__titulo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--laranja)
+}
+
+.principal__subtitulo {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 26px;
+  color: var(--azul);
+  margin: 3em 0 2em 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner__titulo {
+      font-size: 36px;
+  }
+}
