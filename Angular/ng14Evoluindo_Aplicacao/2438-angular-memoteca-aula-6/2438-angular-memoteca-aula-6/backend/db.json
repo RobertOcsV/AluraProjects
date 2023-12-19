@@ -5,7 +5,7 @@
       "conteudo": "We are the champions my friends!!!",
       "autoria": "Queen",
       "modelo": "modelo1",
-      "favorito": false
+      "favorito": true
     },
     {
       "id": 2,
@@ -19,13 +19,13 @@
       "conteudo": "Continue a codar... continue a codar...",
       "autoria": "Dory programadora",
       "modelo": "modelo3",
-      "favorito": false
+      "favorito": true
     },
     {
       "conteudo": "Testando função de editar",
       "autoria": "Angular ",
       "modelo": "modelo2",
-      "favorito": false,
+      "favorito": true,
       "id": 4
     },
     {
@@ -40,7 +40,7 @@
       "conteudo": "Mussum Ipsum, cacilds vidis litro abertis. Atirei o pau no gatis, per gatis num morreus. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.",
       "autoria": "Mussum Ipsum, cacilds vidis litro abertis. Atirei o pau no gatis, per gatis num morreus. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.",
       "modelo": "modelo1",
-      "favorito": true
+      "favorito": false
     },
     {
       "conteudo": "aaa",
@@ -104,6 +104,13 @@
       "modelo": "modelo1",
       "favorito": false,
       "id": 16
+    },
+    {
+      "conteudo": "Eu amo a Thais ",
+      "autoria": "Robert",
+      "modelo": "modelo1",
+      "favorito": false,
+      "id": 17
     }
   ]
 }
