@@ -5,8 +5,9 @@ using ScreenSound.Modelos;
 
 try
 {
-    var connection = new Connection();
-    var listaArtistas =  connection.Listar();
+    var artistaDAL = new ArtistaDAL();
+    artistaDAL.Adicionar(new Artista("Foo fighters", "fdadasdas"));
+    var listaArtistas =  artistaDAL.Listar();
 
     foreach (var artist in listaArtistas)
     { 
