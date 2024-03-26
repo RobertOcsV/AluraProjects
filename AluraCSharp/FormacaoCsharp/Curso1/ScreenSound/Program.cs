@@ -5,9 +5,13 @@ using ScreenSound.Modelos;
 
 try
 {
-    var artistaDAL = new ArtistaDAL();
-    artistaDAL.Adicionar(new Artista("Foo fighters", "fdadasdas"));
-    var listaArtistas =  artistaDAL.Listar();
+    var context = new ScreenSoundContext();
+    var artistaDAL = new ArtistaDAL(context);
+
+    var novoArtista = new Artista("Juca", "BLABLABLA, aeste teste blablol") { Id = 2 };
+
+    artistaDAL.Deletar(novoArtista);
+    var listaArtistas = artistaDAL.Listar();
 
     foreach (var artist in listaArtistas)
     { 
@@ -18,6 +22,7 @@ try
 catch (Exception ex)
 {
     Console.WriteLine(ex.Message);
+    Console.WriteLine(ex.StackTrace);
 }
 
 return;
