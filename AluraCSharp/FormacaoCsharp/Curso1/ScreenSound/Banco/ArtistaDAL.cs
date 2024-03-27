@@ -41,8 +41,8 @@ namespace ScreenSound.Banco
             context.SaveChanges();
         }
 
-        public IEnumerable<Artista> BuscarPorNome(String nome) {
-            return context.Artistas.Where(artista => artista.Nome == nome);
+        public Artista? BuscarPorNome(String nome) {
+            return context.Artistas.FirstOrDefault(artista => artista.Nome == nome);
         }
     }
   
