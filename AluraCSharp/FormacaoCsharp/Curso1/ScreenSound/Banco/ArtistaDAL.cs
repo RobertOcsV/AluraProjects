@@ -40,6 +40,10 @@ namespace ScreenSound.Banco
             context.Artistas.Remove(artista);
             context.SaveChanges();
         }
-    }
 
+        public IEnumerable<Artista> BuscarPorNome(String nome) {
+            return context.Artistas.Where(artista => artista.Nome == nome);
+        }
+    }
+  
 }

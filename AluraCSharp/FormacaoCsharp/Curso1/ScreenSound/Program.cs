@@ -10,13 +10,14 @@ try
 
     var novoArtista = new Artista("Juca", "BLABLABLA, aeste teste blablol") { Id = 2 };
 
-    artistaDAL.Deletar(novoArtista);
-    var listaArtistas = artistaDAL.Listar();
+    artistaDAL.BuscarPorNome("Fernando");
 
-    foreach (var artist in listaArtistas)
-    { 
-        Console.WriteLine(artist);
-    }
+    //var listaArtistas = artistaDAL.Listar();
+
+    //foreach (var artist in listaArtistas)
+    //{
+    //    Console.WriteLine(artist);
+    //}
 
 }
 catch (Exception ex)
