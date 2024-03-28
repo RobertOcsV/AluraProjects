@@ -2,6 +2,8 @@
 using ScreenSound.Menus;
 
 var context = new ScreenSoundContext();
+var musicaDAL = new MusicaDAL(context);
+
 var artistaDAL = new ArtistaDAL(context);
 
 Dictionary<int, Menu> opcoes = new();
