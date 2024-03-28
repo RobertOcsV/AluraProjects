@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ScreenSound.Banco
 {
-    internal abstract class DAL<T> where T : class
+    internal class DAL<T> where T : class
     {
         protected readonly ScreenSoundContext context;
 
@@ -20,7 +20,7 @@ namespace ScreenSound.Banco
         {
             return context.Set<T>().ToList();
         }
-        public void Adicionar(T objeto) 
+        public void Adicionar(T objeto)
         {
             context.Set<T>().Add(objeto);
             context.SaveChanges();
@@ -32,11 +32,16 @@ namespace ScreenSound.Banco
             context.Set<T>().Update(objeto);
             context.SaveChanges();
         }
-          
+
         public void Deletar(T objeto)
         {
             context.Set<T>().Remove(objeto);
             context.SaveChanges();
+        }
+
+        public T? RecuperarPor(Func<T, bool> condicao) 
+        {
+           return context.Set<T>().FirstOrDefault(condicao);
         }
     }
 }
