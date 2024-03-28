@@ -12,34 +12,7 @@ namespace ScreenSound.Banco
     {
         private readonly ScreenSoundContext context;
 
-        public ArtistaDAL(ScreenSoundContext context)
-        {
-            this.context = context;
-        }
-
-        public override IEnumerable<Artista> Listar()
-        {
-            return context.Artistas.ToList();
-        }
-
-        public override void Adicionar(Artista artista)
-        {
-            context.Artistas.Add(artista);
-            context.SaveChanges();
-
-        }
-
-        public void Atualizar(Artista artista)
-        {
-            context.Artistas.Update(artista);
-            context.SaveChanges();
-        }
-
-        public void Deletar(Artista artista)
-        {
-            context.Artistas.Remove(artista);
-            context.SaveChanges();
-        }
+        public ArtistaDAL(ScreenSoundContext context) : base(context) { }
 
         public Artista? BuscarPorNome(String nome) {
             return context.Artistas.FirstOrDefault(artista => artista.Nome == nome);
