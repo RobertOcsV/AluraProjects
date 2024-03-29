@@ -11,7 +11,7 @@ namespace ScreenSound.Banco
     {
         protected readonly ScreenSoundContext context;
 
-        protected DAL(ScreenSoundContext context)
+        public DAL(ScreenSoundContext context)
         {
             this.context = context;
         }
