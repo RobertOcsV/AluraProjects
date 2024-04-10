@@ -16,7 +16,17 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(options => options.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
+builder.Services.AddCors(options => {
+    options.AddPolicy(name: "MyPolicy",
+      policy =>
+      {
+          policy.WithOrigins("https://localhost:7089").AllowAnyHeader().AllowAnyMethod();
+      });
+});
+
 var app = builder.Build();
+
+app.UseCors("MyPolicy");
 
 app.AddEndPointsArtistas();
 app.AddEndPointsMusicas();
