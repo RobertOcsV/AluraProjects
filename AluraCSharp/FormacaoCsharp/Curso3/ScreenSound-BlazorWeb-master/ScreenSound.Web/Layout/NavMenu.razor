@@ -1,39 +1,13 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">ScreenSound.Web</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</div>
+﻿﻿﻿<MudNavMenu Class="mud-width-full mt-4">
 
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
-            </NavLink>
-        </div>
-    </nav>
-</div>
-
-@code {
-    private bool collapseNavMenu = true;
-
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-}
+    <MudNavLink Href="/" Icon="@Icons.Material.Filled.Home">Home</MudNavLink>
+    <MudNavGroup Title="Artistas" Icon="@Icons.Material.Filled.People" Expanded="true">
+        <MudNavLink Href="/Artistas">Exibir</MudNavLink>
+        <MudNavLink Href="/CadastrarArtista">Cadastrar</MudNavLink>
+    </MudNavGroup>
+    <MudNavGroup Title="Músicas" Icon="@Icons.Material.Filled.QueueMusic" Expanded="true">
+        <MudNavLink Href="/MusicasPorArtista">Músicas por artista</MudNavLink>
+        <MudNavLink Href="/MusicasPorGenero">Músicas por gênero</MudNavLink>
+        <MudNavLink Href="/CadastrarMusica">Cadastrar</MudNavLink>
+    </MudNavGroup>
+</MudNavMenu>
