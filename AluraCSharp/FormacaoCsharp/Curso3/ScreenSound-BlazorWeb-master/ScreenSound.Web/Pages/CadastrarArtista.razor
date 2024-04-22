@@ -59,7 +59,7 @@
 
     private async Task Cadastrar()
     {
-        var request = new ArtistaRequest(nome!, biografia!);
+        var request = new ArtistaRequest(nome!, biografia!, fotoPerfil);
         await artistasAPI.AddArtistaAsync(request);
         navigationManager.NavigateTo("/Artistas");
     }
@@ -74,7 +74,10 @@
         using var memoryStream = new MemoryStream();
         await fileStream.CopyToAsync(memoryStream);
 
-        fileImage = $"data:{format};base64,{Convert.ToBase64String(memoryStream.ToArray())}";
-    }
+        var imageUpload = Convert.ToBase64String(memoryStream.ToArray());
 
+        fileImage = $"data:{format};base64,{imageUpload}";
+
+        fotoPerfil = imageUpload;
+    }
 }
