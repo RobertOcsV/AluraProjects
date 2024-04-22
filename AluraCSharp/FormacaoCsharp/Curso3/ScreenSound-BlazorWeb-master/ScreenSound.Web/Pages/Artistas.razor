@@ -1,14 +1,10 @@
 ﻿@page "/Artistas"
 @inject ArtistaAPI artistaAPI
 
-//Código omitido
-
 <MudStack Class="mt-4 mb-4" Row="true" Justify="Justify.SpaceBetween">
     <MudText Class="mb-4" Typo="Typo.h4">Artistas cadastrados</MudText>
     <MudPagination Count="@totalPaginas" SelectedChanged="PaginaMudou"></MudPagination>
 </MudStack>
-
-//Código omitido
 
 
 @if (artistasPorPagina is not null)
@@ -42,7 +38,6 @@
         }
     }
 
-    //Código omitido
 
     private void PaginaMudou(int pageNumber)
     {
@@ -52,6 +47,4 @@
             .Take(tamanho)
             .ToList();
     }
-}
-
-}
+  }

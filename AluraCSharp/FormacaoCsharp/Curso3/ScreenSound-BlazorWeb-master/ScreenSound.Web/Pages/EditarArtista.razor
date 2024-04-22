@@ -33,6 +33,12 @@
                        Class="ml-auto">
                 Deletar
             </MudButton>
+            <MudButton Variant="Variant.Filled"
+                       Color="Color.Primary"
+                       Class="ml-auto"
+                       @onclick="Editar">
+                Salvar
+            </MudButton>
         </div>
 
     </MudForm>
@@ -57,9 +63,19 @@
 
     private async Task Deletar()
     {
-        
+
         await artistasAPI.DeleteArtistaAsync(Artista.Id);
         navigationManager.NavigateTo("/Artistas");
     }
+
+    private async Task Editar()
+    {
+        var requestEdit = new ArtistaRequestEdit(Artista!.Id, nome!, biografia!);
+        await artistasAPI.UpdateArtistaAsync(requestEdit);           
+        navigationManager.NavigateTo("/Artistas");     
+    }
+
+
+    
 
 }
