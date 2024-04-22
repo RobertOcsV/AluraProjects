@@ -10,7 +10,9 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddMudServices();
 
-builder.Services.AddTransient<ArtistaAPI>();
+builder.Services.AddTransient<ArtistasAPI>();
+builder.Services.AddTransient<GeneroAPI>();
+builder.Services.AddTransient<MusicasAPI>();
 
 builder.Services.AddHttpClient("API", client => {
     client.BaseAddress = new Uri(builder.Configuration["APIServer:Url"]!);

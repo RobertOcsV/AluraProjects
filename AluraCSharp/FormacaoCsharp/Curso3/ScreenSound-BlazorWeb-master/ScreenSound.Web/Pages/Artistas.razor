@@ -1,5 +1,5 @@
 ﻿@page "/Artistas"
-@inject ArtistaAPI artistaAPI
+@inject ArtistasAPI artistaAPI
 
 <MudStack Class="mt-4 mb-4" Row="true" Justify="Justify.SpaceBetween">
     <MudText Class="mb-4" Typo="Typo.h4">Artistas cadastrados</MudText>
@@ -28,7 +28,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        artistas = await artistaAPI.GetArtistaAsync();
+        artistas = await artistaAPI.GetArtistasAsync();
         if (artistas is not null)
         {
             artistas = artistas.OrderByDescending(a => a.Id).ToList();
