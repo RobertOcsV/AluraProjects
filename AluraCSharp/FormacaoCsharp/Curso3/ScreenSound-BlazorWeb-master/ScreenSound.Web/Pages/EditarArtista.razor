@@ -1,9 +1,9 @@
-﻿@page "/CadastrarArtista"
+﻿@page "/EditarArtista/{NomeArtista}"
 @inject ArtistaAPI artistasAPI
 @inject NavigationManager navigationManager
 <MudPaper Class="px-8 pt-2 pb-4 mx-12 my-8" Justify="Justify.Center">
 
-    <MudText Class="mt-8" Typo="Typo.h4">Cadastro do Artista</MudText>
+    <MudText Class="mt-8" Typo="Typo.h4">Edição de Artista</MudText>
 
     <MudForm>
 
@@ -28,10 +28,10 @@
                 Artistas Cadastrados
             </MudButton>
             <MudButton Variant="Variant.Filled"
-                       @onclick="Cadastrar"
-                       Color="Color.Primary"
+                       @onclick="Deletar"
+                       Color="Color.Error"
                        Class="ml-auto">
-                Cadastrar
+                Deletar
             </MudButton>
         </div>
 
@@ -42,11 +42,23 @@
 @code {
     private string? nome;
     private string? biografia;
+    [Parameter]
+    public string NomeArtista { get; set; }
 
-    private async Task Cadastrar()
+    public ArtistaResponse? Artista { get; set; }
+
+    protected override async Task OnInitializedAsync()
     {
-        var request = new ArtistaRequest(nome!, biografia!);
-        await artistasAPI.AddArtistaAsync(request);
+        Artista = await artistasAPI.GetArtistaPorNomeAsync(NomeArtista!);
+        nome = Artista!.Nome;
+        biografia = Artista!.Bio;
+    }
+
+
+    private async Task Deletar()
+    {
+        
+        await artistasAPI.DeleteArtistaAsync(Artista.Id);
         navigationManager.NavigateTo("/Artistas");
     }
 

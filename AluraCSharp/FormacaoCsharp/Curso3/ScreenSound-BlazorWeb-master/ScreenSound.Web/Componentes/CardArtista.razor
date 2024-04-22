@@ -10,6 +10,12 @@
     <MudCardContent>
         <MudText Typo="Typo.body2">@Artista!.Bio</MudText>
     </MudCardContent>
+    <MudButton 
+        Color="Color.Warning"
+        Variant="Variant.Outlined"
+        Href=@($"/EditarArtista/{Artista!.Nome}")>Detalhes
+    </MudButton>
+
 </MudCard>
 
 @code {
