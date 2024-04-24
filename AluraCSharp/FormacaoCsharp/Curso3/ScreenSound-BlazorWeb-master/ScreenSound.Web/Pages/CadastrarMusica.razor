@@ -1,6 +1,8 @@
 ﻿@page "/CadastrarMusica"
 @inject ArtistasAPI artistasAPI
 @inject GeneroAPI generoAPI
+@inject MusicasAPI musicaAPI
+@inject NavigationManager navigationManager
 
 <MudPaper Class="px-8 pt-2 pb-4 mx-12 my-8" Justify="Justify.Center">
 
@@ -14,7 +16,7 @@
                       Required="true"
                       RequiredError="Campo obrigatório." />
 
-        <MudSelect Class="mt-4" T="string" Label="Artistas" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
+        <MudSelect Class="mt-4" T="ArtistaResponse" ValueChanged="ArtistaSelecionado" Label="Artistas" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
             @if (Artistas is not null)
             {
                 @foreach (var artista in Artistas)
@@ -31,7 +33,7 @@
                          Required="true"
                          RequiredError="Campo obrigatório." />
 
-        <MudSelect Class="mt-4" T="GeneroResponse" Label="Gêneros" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
+        <MudSelect Class="mt-4" T="GeneroResponse" ValueChanged="GeneroSelecionado" Label="Gêneros" Variant="Variant.Outlined" AnchorOrigin="Origin.BottomCenter">
             @if (Generos is not null)
             {
                 @foreach (var genero in Generos)
@@ -39,11 +41,19 @@
                     <MudSelectItem Value="genero" />
                 }
             }
+            @if(GenerosSelecionados is not null)
+            {
+                foreach (var genero in GenerosSelecionados)
+                {
+                    <MudAlert Severity="Severity.Info">@(genero.Nome) adicionado como gênero da música.</MudAlert>
+                }
+            }
         </MudSelect>
 
         <div class="d-flex align-center justify-space-between mt-4">
             <MudButton Variant="Variant.Filled"
                        Color="Color.Primary"
+                       @onclick="Cadastrar"
                        Class="ml-auto">
                 Cadastrar
             </MudButton>
@@ -57,16 +67,50 @@
     </MudForm>
 
 </MudPaper>
-
 @code {
     private string? nome;
     private int anoLancamento;
     private ICollection<ArtistaResponse>? Artistas { get; set; }
     private ICollection<GeneroResponse>? Generos { get; set; }
 
+    private List<GeneroResponse>? GenerosSelecionados { get; set; } = new();
+    private ArtistaResponse? ArtistaDaMusica { get; set; }
+
     protected override async Task OnInitializedAsync()
     {
         Artistas = await artistasAPI.GetArtistasAsync();
         Generos = await generoAPI.GetGenerosAsync();
+    }
+
+    private void ArtistaSelecionado(ArtistaResponse artista)
+    {
+        ArtistaDaMusica = artista;    
+    }
+
+    private void GeneroSelecionado(GeneroResponse genero)
+    {
+        if (GenerosSelecionados is not null)
+        {
+            if (!GenerosSelecionados.Contains(genero))
+            {
+                GenerosSelecionados.Add(genero);
+            }
+        }
+    }
+
+    private List<GeneroRequest> GenerosRequests { get; set; } = new();
+    public async Task Cadastrar()
+    {
+        if (GenerosSelecionados is not null)
+        {
+            foreach (var genero in GenerosSelecionados)
+            {
+                GenerosRequests.Add(new GeneroRequest(genero.Nome, genero.Descricao));
+            }
+        }
+
+        var musicaRequest = new MusicaRequest(nome!, ArtistaDaMusica!.Id, anoLancamento, GenerosRequests);
+        await musicaAPI.AddMusicaAsync(musicaRequest);
+        navigationManager.NavigateTo("/MusicasPorArtista");
     }
 }
