@@ -19,6 +19,9 @@ builder.Services.AddDbContext<ScreenSoundContext>((options) => {
 builder.Services
     .AddIdentityApiEndpoints<PessoaComAcesso>()
     .AddEntityFrameworkStores<ScreenSoundContext>();
+
+builder.Services.AddAuthorization();
+
 builder.Services.AddTransient<DAL<Artista>>();
 builder.Services.AddTransient<DAL<Musica>>();
 builder.Services.AddTransient<DAL<Genero>>();
@@ -44,6 +47,7 @@ var app = builder.Build();
 app.UseCors("wasm");
 
 app.UseStaticFiles();
+app.UseAuthorization();
 
 app.AddEndPointsArtistas();
 app.AddEndPointsMusicas();
