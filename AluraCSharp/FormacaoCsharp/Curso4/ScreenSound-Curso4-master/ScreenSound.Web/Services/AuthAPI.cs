@@ -9,7 +9,7 @@ namespace ScreenSound.Web.Services
 
         public async Task<AuthResponse> LoginAsync(string email, string senha)
         {
-          var response =   await _httpClient.PostAsJsonAsync("auth/login",
+          var response =   await _httpClient.PostAsJsonAsync("auth/login?useCookies=true",
              new
              {
                 email,
