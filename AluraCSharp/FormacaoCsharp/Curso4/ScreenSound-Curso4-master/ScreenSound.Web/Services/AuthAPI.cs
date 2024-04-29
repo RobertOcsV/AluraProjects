@@ -13,10 +13,11 @@ namespace ScreenSound.Web.Services
         {
             var pessoa = new ClaimsPrincipal();
 
-            var info = await _httpClient.GetFromJsonAsync<InfoPessoaResponse>("auth/manage/info");
+            var response = await _httpClient.GetAsync("auth/manage/info");
 
-            if (info is not null)
+            if (response.IsSuccessStatusCode)
             {
+                var info = await response.Content.ReadFromJsonAsync<InfoPessoaResponse>();
                 Claim[] dados =
                     [
                         new Claim(ClaimTypes.Name, info.Email),
@@ -42,6 +43,7 @@ namespace ScreenSound.Web.Services
 
             if (response.IsSuccessStatusCode)
             {
+                NotifyAuthenticationStateChanged(GetAuthenticationStateAsync());
                 return new AuthResponse { Sucesso = true };
             }
 
