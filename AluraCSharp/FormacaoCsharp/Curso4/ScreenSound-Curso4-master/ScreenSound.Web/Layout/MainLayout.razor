@@ -25,9 +25,15 @@
             </NotAuthorized>
         </AuthorizeView>
     </MudAppBar>
-    <MudDrawer Open="true" ClipMode="DrawerClipMode.Always" Elevation="2">
-        <NavMenu></NavMenu>
-    </MudDrawer>
+    @using Microsoft.AspNetCore.Components.Authorization
+
+    <AuthorizeView>
+        <Authorized>
+            <MudDrawer Open="true" ClipMode="DrawerClipMode.Always" Elevation="2">
+                <NavMenu></NavMenu>
+            </MudDrawer>
+        </Authorized>
+    </AuthorizeView>
     <MudMainContent class="main-content pa-10">
         @Body
     </MudMainContent>
