@@ -1,8 +1,11 @@
-﻿namespace ScreenSound.Modelos; 
+﻿using ScreenSound.Shared.Modelos.Modelos;
+
+namespace ScreenSound.Modelos; 
 
 public class Artista 
 {
     public virtual ICollection<Musica> Musicas { get; set; } = new List<Musica>();
+    public ICollection<AvaliacaoArtista> Avaliacoes { get; set; } = new List<AvaliacaoArtista>();
     public Artista()
     {
         //FotoPerfil = "https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png";
@@ -24,8 +27,15 @@ public class Artista
         Musicas.Add(musica);
     }
 
-    public void ExibirDiscografia()
+    public void AdicionarNota(int pessoa, int nota)
     {
+        nota = Math.Min(Math.Max(nota, 1), 5);
+        // nota = Math.Clamp(nota, 1, 5);
+        Avaliacoes.Add(new AvaliacaoArtista() { ArtistaId = this.Id, PessoaId = pessoa, Nota = nota});
+    }
+
+    public void ExibirDiscografia()
+    {   
         Console.WriteLine($"Discografia do artista {Nome}");
         foreach (var musica in Musicas)
         {
