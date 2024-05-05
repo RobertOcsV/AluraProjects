@@ -1,5 +1,6 @@
 ﻿@page "/logout"
 @inject AuthAPI AuthAPI
+@attribute [AllowAnonymous]
 
 @code {
     protected override async Task OnInitializedAsync()
