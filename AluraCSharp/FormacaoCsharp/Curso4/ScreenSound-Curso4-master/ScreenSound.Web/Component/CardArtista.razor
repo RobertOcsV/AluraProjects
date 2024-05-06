@@ -1,4 +1,4 @@
-﻿<MudCard>
+﻿﻿<MudCard>
     <MudCardMedia Image=@Imagem></MudCardMedia>
     <MudCardHeader>
         <CardHeaderContent>
@@ -7,11 +7,12 @@
     </MudCardHeader>
     <MudCardContent>
         <MudText Typo="Typo.body2">@LimitaCaracteres(Artista!.Bio, 150)</MudText>
+        <MudRating SelectedValue="@Convert.ToInt32(Artista!.Classificacao)" />
     </MudCardContent>
     <MudCardActions>
         <MudButton Color="Color.Warning"
                    Variant="Variant.Outlined"
-                   Href=@($"/EditarArtista/{Artista!.Nome}")>Detalhes</MudButton>
+                   Href=@($"/EditarArtista/{Artista!.Id}")>Detalhes</MudButton>
     </MudCardActions>
 </MudCard>
 
@@ -33,4 +34,5 @@
         tamanhoMaximo -= 3;
         return (texto.Length >= tamanhoMaximo) ? $"{texto.Substring(0, tamanhoMaximo)}..." : texto;
     }
+
 }

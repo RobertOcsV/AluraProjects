@@ -26,25 +26,32 @@
                           RequiredError="Campo obrigatório." />
 
             <div class="d-flex align-center justify-space-between mt-4">
-                <MudButton Variant="Variant.Filled"
-                           Color="Color.Primary"
-                           Disabled="@(!success)"
-                           Class="ml-auto"
-                           @onclick="Editar">
-                    Salvar
-                </MudButton>
-                <MudButton Variant="Variant.Filled"
-                           Color="Color.Warning"
-                           Class="ml-3"
-                           @onclick="Deletar">
-                    Excluir
-                </MudButton>
-                <MudButton Variant="Variant.Filled"
-                           Color="Color.Info"
-                           Class="ml-3"
-                           @onclick="VoltarParaListagem">
-                    Voltar
-                </MudButton>
+
+                <MudRating @bind-SelectedValue="Classificacao"
+                           @onclick="AvaliarArtista" />
+
+                <div>
+                    <MudButton Variant="Variant.Filled"
+                               Color="Color.Primary"
+                               Disabled="@(!success)"
+                               Class="ml-auto"
+                               @onclick="Editar">
+                        Salvar
+                    </MudButton>
+                    <MudButton Variant="Variant.Filled"
+                               Color="Color.Warning"
+                               Class="ml-3"
+                               @onclick="Deletar">
+                        Excluir
+                    </MudButton>
+                    <MudButton Variant="Variant.Filled"
+                               Color="Color.Info"
+                               Class="ml-3"
+                               @onclick="VoltarParaListagem">
+                        Voltar
+                    </MudButton>
+                </div>
+
             </div>
 
         </MudForm>
@@ -63,12 +70,15 @@ else
     MudForm? form;
     public ArtistaResponse? Artista { get; set; }
     public string? Nome { get; set; } = string.Empty;
-    public string? Bio { get; set; }=string.Empty;
+    public string? Bio { get; set; } = string.Empty;
+    public int Classificacao { get; set; }
+
+
     [Parameter]
     public string? NomeArtista { get; set; }
 
     protected override async Task OnInitializedAsync()
-    {       
+    {
         Artista = await artistaAPI.GetArtistaPorNomeAsync(NomeArtista!);
         if (Artista is null)
         {
@@ -92,7 +102,7 @@ else
     {
         try
         {
-            var requestEdit = new ArtistaRequestEdit(Artista.Id,Nome,Bio,Artista.FotoPerfil);
+            var requestEdit = new ArtistaRequestEdit(Artista.Id, Nome, Bio, Artista.FotoPerfil);
             await artistaAPI.UpdateArtistaAsync(requestEdit);
             Snackbar.Add("Artista atualizado com sucesso!", Severity.Success);
             navigationManager.NavigateTo("/Artistas");
@@ -117,5 +127,11 @@ else
             // Logger.LogInformation("Erro ao cadastrar artista!");
         }
 
+    }
+
+
+    private async Task AvaliarArtista()
+    {
+        await artistaAPI.AvaliaArtistaAsync(Artista!.Id, Classificacao);
     }
 }
