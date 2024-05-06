@@ -23,6 +23,7 @@ builder.Services
 
 builder.Services.AddAuthorization();
 
+builder.Services.AddTransient<DAL<PessoaComAcesso>>();
 builder.Services.AddTransient<DAL<Artista>>();
 builder.Services.AddTransient<DAL<Musica>>();
 builder.Services.AddTransient<DAL<Genero>>();

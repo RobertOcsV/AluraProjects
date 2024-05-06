@@ -1,4 +1,4 @@
 ﻿namespace ScreenSound.API.Requests
 {
-    public record AvaliacaoArtistaRequest(int ArtistaId, int Nota);    
+    public record AvaliacaoArtistaRequest(int ArtistaId, int Nota);
 }

@@ -4,6 +4,7 @@ using ScreenSound.API.Response;
 using ScreenSound.Banco;
 using ScreenSound.Modelos;
 using ScreenSound.Shared.Dados.Modelos;
+using ScreenSound.Shared.Modelos.Modelos;
 using System.Security.Claims;
 
 namespace ScreenSound.API.Endpoints;
@@ -12,7 +13,9 @@ public static class ArtistasExtensions
 {
     public static void AddEndPointsArtistas(this WebApplication app)
     {
-        var groupBuilder = app.MapGroup("artistas").RequireAuthorization().WithTags("Artistas");
+        var groupBuilder = app.MapGroup("artistas")
+            .RequireAuthorization()
+            .WithTags("Artistas");
 
         #region Endpoint Artistas
         groupBuilder.MapGet("", ([FromServices] DAL<Artista> dal) =>
@@ -26,7 +29,7 @@ public static class ArtistasExtensions
             return Results.Ok(listaDeArtistaResponse);
         }).RequireAuthorization();
 
-        groupBuilder.MapGet("/{nome}", ([FromServices] DAL<Artista> dal, string nome) =>
+        groupBuilder.MapGet("{nome}", ([FromServices] DAL<Artista> dal, string nome) =>
         {
             var artista = dal.RecuperarPor(a => a.Nome.ToUpper().Equals(nome.ToUpper()));
             if (artista is null)
@@ -37,9 +40,9 @@ public static class ArtistasExtensions
 
         });
 
-        groupBuilder.MapPost("", async ([FromServices]IHostEnvironment env,[FromServices] DAL<Artista> dal, [FromBody] ArtistaRequest artistaRequest) =>
+        groupBuilder.MapPost("", async ([FromServices] IHostEnvironment env, [FromServices] DAL<Artista> dal, [FromBody] ArtistaRequest artistaRequest) =>
         {
-            
+
             var nome = artistaRequest.nome.Trim();
             var imagemArtista = DateTime.Now.ToString("ddMMyyyyhhss") + "." + nome + ".jpg";
 
@@ -56,7 +59,8 @@ public static class ArtistasExtensions
             return Results.Ok();
         });
 
-        groupBuilder.MapDelete("/{id}", ([FromServices] DAL<Artista> dal, int id) => {
+        groupBuilder.MapDelete("{id}", ([FromServices] DAL<Artista> dal, int id) =>
+        {
             var artista = dal.RecuperarPor(a => a.Id == id);
             if (artista is null)
             {
@@ -67,19 +71,20 @@ public static class ArtistasExtensions
 
         });
 
-        groupBuilder.MapPut("", ([FromServices] DAL<Artista> dal, [FromBody] ArtistaRequestEdit artistaRequestEdit) => {
+        groupBuilder.MapPut("", ([FromServices] DAL<Artista> dal, [FromBody] ArtistaRequestEdit artistaRequestEdit) =>
+        {
             var artistaAAtualizar = dal.RecuperarPor(a => a.Id == artistaRequestEdit.Id);
             if (artistaAAtualizar is null)
             {
                 return Results.NotFound();
             }
             artistaAAtualizar.Nome = artistaRequestEdit.nome;
-            artistaAAtualizar.Bio = artistaRequestEdit.bio;        
+            artistaAAtualizar.Bio = artistaRequestEdit.bio;
             dal.Atualizar(artistaAAtualizar);
             return Results.Ok();
         });
 
-        //POST artistas/avaliacao
+
         groupBuilder.MapPost("avaliacao", (
             HttpContext context,
             [FromBody] AvaliacaoArtistaRequest request,
@@ -89,14 +94,18 @@ public static class ArtistasExtensions
         {
             var artista = dalArtista.RecuperarPor(a => a.Id == request.ArtistaId);
             if (artista is null) return Results.NotFound();
+
             var email = context.User.Claims
                 .FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value
                 ?? throw new InvalidOperationException("Pessoa não está conectada");
+
             var pessoa = dalPessoa
                 .RecuperarPor(p => p.Email.Equals(email))
                 ?? throw new InvalidOperationException("Pessoa não está conectada");
+
             var avaliacao = artista.Avaliacoes
                 .FirstOrDefault(a => a.ArtistaId == artista.Id && a.PessoaId == pessoa.Id);
+
             if (avaliacao is null)
             {
                 artista.AdicionarNota(pessoa.Id, request.Nota);
@@ -106,7 +115,6 @@ public static class ArtistasExtensions
                 avaliacao.Nota = request.Nota;
             }
 
-            artista.AdicionarNota(pessoa.Id, request.Nota);
             dalArtista.Atualizar(artista);
 
             return Results.Created();
@@ -146,8 +154,15 @@ public static class ArtistasExtensions
 
     private static ArtistaResponse EntityToResponse(Artista artista)
     {
-        return new ArtistaResponse(artista.Id, artista.Nome, artista.Bio, artista.FotoPerfil);
+        return new ArtistaResponse(artista.Id, artista.Nome, artista.Bio, artista.FotoPerfil)
+        {
+            Classificacao = artista
+                .Avaliacoes
+                .Select(a => a.Nota)
+                .DefaultIfEmpty(0)
+                .Average()
+        };
     }
 
-  
+
 }
