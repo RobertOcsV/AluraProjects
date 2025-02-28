@@ -9,6 +9,8 @@ namespace JornadaMilhas.Modelos
     public class Musica
     {
         private int? anoLancamento;
+        private string? artista;
+
         public Musica(string nome)
         {
             Nome = nome;
@@ -16,14 +18,21 @@ namespace JornadaMilhas.Modelos
 
         public string Nome { get; set; }
         public int Id { get; set; }
-        public string Artista { get; set; }
-        public int? AnoLancamento {
+        public string? Artista
+        {
+            get => artista;
+            set {
+                artista = (value == null || value == "") ? "Desconhecido" : value;
+            }
+        }
+        public int? AnoLancamento
+        {
             get => anoLancamento;
-            set 
+            set
             {
                 anoLancamento = (value <= 0) ? null : value;
             }
-        
+
         }
 
         public void ExibirFichaTecnica()

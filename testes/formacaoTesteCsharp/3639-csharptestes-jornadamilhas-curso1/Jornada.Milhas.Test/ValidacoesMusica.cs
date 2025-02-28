@@ -9,19 +9,36 @@ namespace JornadaMilhas.Test;
 
 public class ValidacoesMusica
 {
-    [Fact]
-    public void ValidaAnoDeLancamentoMusicaNaoPodeSerNegativo() 
+    [Theory]
+    [InlineData(-1000)]
+    [InlineData(0)]
+    public void ValidaAnoDeLancamentoMusicaNaoPodeSerNegativoOuZero(int anoLancamento)
     {
 
         //arrange
         Musica musica = new Musica("Gangs Style");
-        int anoLancamento = -1000;
 
         //act
         musica.AnoLancamento = anoLancamento;
-        
+
         //assert
         Assert.Null(musica.AnoLancamento);
+    }
+
+    [Theory]
+    [InlineData(null)]
+    [InlineData("")]
+    public void RetornaValorDesconhecidoCasoArtistaSejaNuloOuVazio(string artista)
+    {
+
+        //arrange
+        Musica musica = new Musica("Gangs Style");
+
+        //act
+        musica.Artista = artista;
+
+        //assert
+        Assert.Equal("Desconhecido", musica.Artista);
     }
 
 }
