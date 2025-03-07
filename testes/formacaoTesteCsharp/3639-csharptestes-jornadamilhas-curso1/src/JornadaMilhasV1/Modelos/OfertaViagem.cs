@@ -15,6 +15,7 @@ public class OfertaViagem : Valida
 
     public int Id { get; set; }
     public Rota Rota { get; set; }
+    public bool Ativa { get; set; } = true;
     public Periodo Periodo { get; set; }
     public double Preco { get; set; }
     public double Desconto
@@ -43,6 +44,8 @@ public class OfertaViagem : Valida
     {
         return $"Origem: {Rota.Origem}, Destino: {Rota.Destino}, Data de Ida: {Periodo.DataInicial.ToShortDateString()}, Data de Volta: {Periodo.DataFinal.ToShortDateString()}, Preço: {Preco:C}";
     }
+
+
 
     protected override void Validar()
     {

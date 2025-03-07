@@ -65,6 +65,8 @@ public class GerenciadorDeOfertas
 
     }
 
+    public OfertaViagem? RecuperaMaiorDesconto(Func<OfertaViagem, bool> filtro) => ofertaViagem.FirstOrDefault();
+
 
     public void CarregarOfertas()
     {
